@@ -1,63 +1,148 @@
 <template>
-  <div class="hello">
-    <img :src="PHOTO" alt= "Img not found" height= 100 width= 100 />
-    <div class= "name">{{ FULLNAME }}</div>
-    <div class= "description">{{ DESCRIPTION }}</div>
+  <!-- Class to manage a singular member card
+    "hovered" class is linked to "hovered" data (this.hovered) to toggle it on mouseover and mouseout events,
+    Template consists of:
+      * the image
+      * fullname (firstname + lastname)
+      * description
+   -->
+  <div class= "container" :class= "{hovered: hovered}" @mouseover= "toggleHovered" @mouseout= "toggleHovered">
+    <img :src="photo" alt= "Image not found" class= "photo" />
+    <div class= "name">{{ fullname }}</div>
+    <div class= "description">{{ description }}</div>
   </div>
 </template>
 
 <script>
-  import memberList from '@/datas/MemberList'
-
+  /* 
+    The main script use the Options API style for VueJS.
+    props: and object that must consists of:
+      * 'firstname' and 'lastname'
+      * 'photo' reference in the @/assets/img folder
+      * 'description'
+    data:
+      * hovered: linked to the template to toggle the 'hovered' class
+      * firstname, fullname, photo, description: to manage the props above in the template
+    methods:
+      * toggleHovered(): the method called to change the value of the 'hovered' data (this.hovered)
+  */
   export default {
     name: 'MemberCard', // Optional name for the component
     // Props definition
     props: {
-      memberId: {
+      info: {
         // Required id number that is from the memberList variable
-        type: Number,
-        required: true,
+        default: {
+          firstname: "Firstname",
+          lastname: "LastName",
+          description: "Description",
+          photo: "logo.png"
+        }, // To prevent errors
       }
     },
     data() {
       // Data to use in the templates
-      const MEMBER= memberList[this.memberId];
-      const FULLNAME= MEMBER.firstname + " " + MEMBER.lastname.toUpperCase(), DESCRIPTION= MEMBER.description, PHOTO= require(`@/assets/img/${MEMBER.photo}`);
-      return {
-        MEMBER, FULLNAME, DESCRIPTION, PHOTO
-      }
+      let hovered= false;
+      /* We added default so no need to check it */
+      // if (!('firstname' in this.info && 'lastname' in this.info && 'photo' in this.info && 'description' in this.info))
+      //   console.log('Nothing to show');
+      // else {
+        const fullname= this.info.firstname + ' ' + this.info.lastname.toUpperCase();
+        const photo= require(`@/assets/img/${this.info.photo}`);  // Require the image from the assets
+        const description= this.info.description;
+        const id= this.info.id
+        return {
+          fullname, photo, description, id, hovered
+        }
+      // }
     },
-    // Getting the image path using imgPath method as computed property
-    /*OPTIONS API*/
-    // computed: {
-    //   /*getMemberImgPath: function() {
-    //     // Before ES 6
-    //     return require(`@/assets/img/${memberList[this.memberId].photo}`);
-    //   },*/
-
-    //   // And so on...
-
-    //   getMemberImgPath() {
-    //     // ES 6
-    //     return require(`@/assets/img/${memberList[this.memberId].photo}`); // Require the image in the assets
-    //   },
-    //   getMemberName() {
-    //     return memberList[this.memberId].fullname;
-    //   },
-    //   getMemberDescription() {
-    //     return memberList[this.memberId].description;
-    //   }
-    // },
-    /*COMPOSITION API*/
-    /*setup(props) {
-      const getMemberImgPath= require(`@/assets/img/${memberList[this.memberId].photo}`);  // Get the image path in the assets
-      return {
-        getMemberImgPath,
+    methods: {
+      // The needed methods to manage the Vue
+      toggleHovered() {
+        // Toggle the hovered properties for the card
+        this.hovered= !this.hovered
       }
-    }*/
+    }
   }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+  /*
+    NB: TO BE CHANGED
+  */
+  @import '@/assets/style/colors.css'; /* Importing the base colors */
+
+  .description, .name, img {
+    position: absolute;
+    margin: 5px 10px;
+  }
+  .container {
+    /* the mainn container */
+    position: relative;
+    height: 350px;
+    width: 220px;
+    margin: 10px;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: #ffffff;
+
+    background: var(--vue-blue);
+    border: solid 1px #ffffff;
+    border-radius: 20px;
+
+    cursor: pointer;
+    transition: all .2s;
+    transition-timing-function: ease-in;
+  }
+  img {
+    /* the image */
+    top: 3%;
+    height: 50%;
+    width: 75%;
+    padding: 15px;
+    margin: 15px;
+
+    background: var(--dark-blue);
+  }
+  .name {
+    /* the fullname text */
+    top: 55%;
+    height: 75px;
+    margin: 15px;
+
+    display: grid;
+    place-items: center;
+    
+    letter-spacing: 1px;
+    font-size: 17px;
+    font-weight: 900;
+    vertical-align: center;
+  }
+  .description {
+    /* the description text */
+    top: 83%;
+    font-weight: bold;
+  }
+  /* Configuration for the .hovered class mentionned above (on hover) */
+  .hovered {
+    /* .container:hover */
+    width: 224px;
+    height: 354px;
+    margin: 8px;
+
+    background: #ffffff;
+    color: var(--dark-green);
+    box-shadow: 0 0 20px var(--vue-green);
+  }
+  .hovered > img{
+    /* img on card hover */
+    background: var(--vue-green);
+  }
 </style>
