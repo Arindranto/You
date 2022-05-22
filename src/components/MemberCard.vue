@@ -1,3 +1,4 @@
+<!-- Test Faniry -->
 <template>
   <!-- Class to manage a singular member card
     "hovered" class is linked to "hovered" data (this.hovered) to toggle it on mouseover and mouseout events,
@@ -32,12 +33,7 @@
     props: {
       info: {
         // Required id number that is from the memberList variable
-        required: true,
         default: {
-          id: {
-            type: Number,
-            required: true
-          },
           firstname: "Firstname",
           lastname: "LastName",
           description: "Description",
@@ -48,12 +44,20 @@
     data() {
       // Data to use in the templates
       let hovered= false;
-      const photo= require(`@/assets/img/${this.info.photo}`);  // Require the image from the assets
-      const description= this.info.description;
-      const id= this.info.id;
-      return {
-        photo, description, id, hovered
-      }
+      /* We added default so no need to check it */
+      // if (!('firstname' in this.info && 'lastname' in this.info && 'photo' in this.info && 'description' in this.info))
+      //   console.log('Nothing to show');
+      // else {
+        const fullname= this.info.firstname + ' '+ this.info.lastname.toUpperCase();
+        const firstname = this.info.firstname;
+        const lastname = this.info.lastname.toUpperCase();
+        const photo= require(`@/assets/img/${this.info.photo}`);  // Require the image from the assets
+        const description= this.info.description;
+        const id= this.info.id
+        return {
+          fullname, photo, description, id, hovered, firstname, lastname
+        }
+      // }
     },
     methods: {
       // The needed methods to manage the Vue
@@ -61,14 +65,6 @@
         // Toggle the hovered properties for the card
         this.hovered= !this.hovered
       }
-    },
-    computed: {
-      fullname() {
-        // Returns the fullname of the person
-        if (!('firstname' in this.info && 'lastname' in this.info))
-          return 'Firstname LASTNAME';
-        return this.info.firstname + ' ' + this.info.lastname.toUpperCase();
-      },
     }
   }
 </script>
@@ -79,6 +75,7 @@
     NB: TO BE CHANGED
   */
   @import '@/assets/style/colors.css'; /* Importing the base colors */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
   .description, .name, img {
     position: absolute;
@@ -91,36 +88,52 @@
     width: 220px;
     margin: 10px;
 
-
+    font-weight: 100;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+
+    /* justify-content: center; */
     align-items: center;
 
     text-align: center;
     color: #ffffff;
 
     background: var(--vue-blue);
-    border: solid 1px #ffffff;
+    /* border: solid 1px #ffffff; */
+    box-shadow: 0 0 40px rgb(0, 0, 0, 0.5);
     border-radius: 20px;
 
     cursor: pointer;
-    transition: all .2s;
+    transition: all .3s;
     transition-timing-function: ease-in;
+  }
+  .container::before{
+    content:"";
+    border-radius: 20px 20px 0 0;
+    position: absolute;
+   
+    height: 30%;
+    width: 100%;
+    background: var(--vue-green);
+
   }
   img {
     /* the image */
     top: 3%;
     height: 50%;
-    width: 75%;
-    padding: 15px;
-    margin: 15px;
+    width: 80%;
+    object-fit: cover;
+    
+    border-radius: 50%;
+
+    /* padding: 15px;
+    margin: 15px; */
 
     background: var(--dark-blue);
   }
   .name {
     /* the fullname text */
-    top: 55%;
+    top: 53%;
     height: 75px;
     margin: 15px;
 
@@ -134,8 +147,10 @@
   }
   .description {
     /* the description text */
-    top: 83%;
+
+    top: 85%;
     font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
   /* Configuration for the .hovered class mentionned above (on hover) */
   .hovered {
@@ -144,12 +159,13 @@
     height: 354px;
     margin: 8px;
 
-    background: #ffffff;
-    color: var(--dark-green);
-    box-shadow: 0 0 20px var(--vue-green);
+    background:  var(--vue-green);
+    color: var(--dark-blue);
+    box-shadow: 0 10px 40px var(--dark-green);
   }
-  .hovered > img{
-    /* img on card hover */
-    background: var(--vue-green);
-  }
+
+  /*.hovered > img{
+     img on card hover 
+    background: white;
+  }*/
 </style>
