@@ -34,6 +34,3 @@ let memberList= [
 ];
 
 export default memberList;
-/*{
-	memberList: memberList,	// Because it is an array, exporting it without precising the variable would cause it to consider memberList as an object
-}*/
