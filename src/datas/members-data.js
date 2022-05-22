@@ -10,7 +10,7 @@ let memberList= [
 	{
 		firstname: "Mendrika Henintsoa",
 		lastname: "Harimalala",
-		description: "Fullstack JavaScript Developer",
+		description: "Software Engineer Student",
 		photo: "faniry_height.png",
 	},
 	{
