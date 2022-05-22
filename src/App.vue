@@ -28,6 +28,7 @@
 <style>
   /* NB: TO BE MODIFIED */
   @import '@/assets/style/colors.css'; /* Importing the base colors */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
   * {
     /* GENERAL SETTINGS */
@@ -47,11 +48,12 @@
     height: 100%;
     
     background: var(--dark-blue);
-    font-family: rounded-arial, arial, sans-serif;
+    font-family: "ubuntu", sans-serif;
   }
   h1 {
     font-size: max(3vw, 25px);
     letter-spacing: 2px;
+    font-family: "ubuntu", sans-serif;
 
     height: 40px;
     margin: 30px;
