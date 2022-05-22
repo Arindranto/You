@@ -47,12 +47,11 @@
       // if (!('firstname' in this.info && 'lastname' in this.info && 'photo' in this.info && 'description' in this.info))
       //   console.log('Nothing to show');
       // else {
-        const fullname= this.info.firstname + ' ' + this.info.lastname.toUpperCase();
         const photo= require(`@/assets/img/${this.info.photo}`);  // Require the image from the assets
         const description= this.info.description;
         const id= this.info.id
         return {
-          fullname, photo, description, id, hovered
+          photo, description, id, hovered
         }
       // }
     },
@@ -62,6 +61,12 @@
         // Toggle the hovered properties for the card
         this.hovered= !this.hovered
       }
+    },
+    computed: {
+      fullname() {
+        // Returns the fullname of the person
+        return this.info.firstname + ' ' + this.info.lastname.toUpperCase();
+      },
     }
   }
 </script>
