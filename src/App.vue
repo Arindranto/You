@@ -1,15 +1,27 @@
 <template>
   <!-- 
     To contain the main app
-    A router-view is used to display the appropriate component according to the given route
+    HomePage and ProfilePage for the one page app
   -->
-  <router-view />
+  <HomePage />
+  <ProfilePage />
 </template>
 
 <script>
+  /*
+    components:
+      * HomePage
+      * ProfilePage
+  */
+  import HomePage from '@/components/HomePage';
+  import ProfilePage from "@/components/ProfilePage";
+
   export default {
     name: 'App',
-    // We have no component as we use a router-view to display the appropriate component according to the route
+    components: {
+      HomePage,
+      ProfilePage
+    }
   }
 </script>
 
