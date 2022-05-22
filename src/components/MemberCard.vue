@@ -32,7 +32,12 @@
     props: {
       info: {
         // Required id number that is from the memberList variable
+        required: true,
         default: {
+          id: {
+            type: Number,
+            required: true
+          },
           firstname: "Firstname",
           lastname: "LastName",
           description: "Description",
@@ -43,17 +48,12 @@
     data() {
       // Data to use in the templates
       let hovered= false;
-      /* We added default so no need to check it */
-      // if (!('firstname' in this.info && 'lastname' in this.info && 'photo' in this.info && 'description' in this.info))
-      //   console.log('Nothing to show');
-      // else {
-        const photo= require(`@/assets/img/${this.info.photo}`);  // Require the image from the assets
-        const description= this.info.description;
-        const id= this.info.id
-        return {
-          photo, description, id, hovered
-        }
-      // }
+      const photo= require(`@/assets/img/${this.info.photo}`);  // Require the image from the assets
+      const description= this.info.description;
+      const id= this.info.id;
+      return {
+        photo, description, id, hovered
+      }
     },
     methods: {
       // The needed methods to manage the Vue
@@ -65,6 +65,8 @@
     computed: {
       fullname() {
         // Returns the fullname of the person
+        if (!('firstname' in this.info && 'lastname' in this.info))
+          return 'Firstname LASTNAME';
         return this.info.firstname + ' ' + this.info.lastname.toUpperCase();
       },
     }

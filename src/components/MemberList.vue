@@ -1,10 +1,13 @@
 <template>
   <div id= "list">
     <!-- 
-      To generate the list of member cards,
-      we use the v-for option to iterate over the memberList Array imported from @/datas/MemberList.js
+      To generate the list of member cards that redirect to the profile page,
+      we use the v-for option in a router-link element (similar to html a tag)
+      and iterate over the memberList Array imported from @/datas/MemberList.js
     -->
-    <MemberCard v-for= "(member, index) in members" :key= "index" :id= "`card-${index}`" :info= "member" @click= "viewProfile(index)"/>
+    <router-link v-for= "(member, index) in members" :key= "index" :to= "`/${index}`">
+      <MemberCard  :id= "`card-${index}`" :info= "member"/>
+    </router-link>
   </div>
 </template>
 
@@ -29,12 +32,6 @@
       return {
         members,
       }
-    },
-    methods: {
-      viewProfile(index) {
-        // Open the profile vue for the clicked person
-        alert(index); 
-      },
     },
   }
 
