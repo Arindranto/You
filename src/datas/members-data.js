@@ -14,7 +14,7 @@ let memberList= [
 	{
 		assets: {
 			description: "Fullstack JavaScript Developer",
-			photo: "faniry_height.png",
+			photo: "mendrika_height.png",
 		},
 		personalInfo: {
 			firstname: "Mendrika Henintsoa",
@@ -44,7 +44,7 @@ let memberList= [
 	{
 		assets: {
 			description: "UI/UX Deveoper",
-			photo: "faniry_height.png",
+			photo: "Tsiory.png",
 		},
 		personalInfo: {
 			firstname: "Tsiory Herinjato",
