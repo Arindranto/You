@@ -15,7 +15,7 @@ let memberList= [
 	},
 	{
 		assets: {
-			description: "Sofware Engineer Student",
+			description: "Software Engineer Student",
 			photo: "mendrika_height.png",
 		},
 		personalInfo: {
