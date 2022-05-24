@@ -1,4 +1,3 @@
-<!-- Test Faniry -->
 <template>
   <!-- Class to manage a singular member card
     "hovered" class is linked to "hovered" data (this.hovered) to toggle it on mouseover and mouseout events,
@@ -82,36 +81,32 @@
     margin: 5px 10px;
   }
   .container {
-    /* the mainn container */
+    /* the main container */
     position: relative;
     height: 350px;
-    width: 220px;
+    width: 215px;
     margin: 10px;
     font-weight: 100;
 
 
+
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
-
     text-align: center;
     color: #ffffff;
-
     background: var(--vue-blue);
-    /* border: solid 1px #ffffff; */
     box-shadow: 0 0 40px rgb(0, 0, 0, 0.5);
     border-radius: 20px;
-
     cursor: pointer;
-    transition: all .3s;
+    transition: all .1s;
     transition-timing-function: ease-in;
   }
   .container::before{
+    /*  */
     content:"";
     border-radius: 20px 20px 0 0;
     position: absolute;
-   
     height: 30%;
     width: 100%;
     background: var(--vue-green);
@@ -123,12 +118,7 @@
     height: 50%;
     width: 80%;
     object-fit: cover;
-    
     border-radius: 50%;
-
-    /* padding: 15px;
-    margin: 15px; */
-
     background: var(--dark-blue);
   }
   .name {
@@ -136,10 +126,8 @@
     top: 53%;
     height: 75px;
     margin: 15px;
-  
     display: grid;
     place-items: center;
-    
     letter-spacing: 1px;
     font-size: 17px;
     font-weight: 900;
@@ -154,10 +142,9 @@
   /* Configuration for the .hovered class mentionned above (on hover) */
   .hovered {
     /* .container:hover */
-    width: 224px;
+    width: 220px;
     height: 354px;
     margin: 8px;
-
     background:  var(--vue-green);
     color: var(--dark-blue);
     box-shadow: 0 10px 40px var(--dark-green);
