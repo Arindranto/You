@@ -2,34 +2,54 @@
 // A member will have name, description and image
 let memberList= [
 	{
-		firstname: "Safidy Herinirina Arindranto",
-		lastname: "Andriantsoa",
-		description: "Information Technology Enthusiast",
-		photo: "faniry_height.png",
+		assets: {
+			description: "Information Technology Enthusiast",
+			photo: "safidy_height.png",
+		},
+		personalInfo: {
+			firstname: "Safidy Herinirina Arindranto",
+			lastname: "Andriantsoa",
+		},
 	},
 	{
-		firstname: "Mendrika Henintsoa",
-		lastname: "Harimalala",
-		description: "Software Engineer Student",
-		photo: "faniry_height.png",
+		assets: {
+			description: "Fullstack JavaScript Developer",
+			photo: "faniry_height.png",
+		},
+		personalInfo: {
+			firstname: "Mendrika Henintsoa",
+			lastname: "Harimalala",
+		},
 	},
 	{
-		firstname: "Aina Sariaka",
-		lastname: "Andriamanana",
-		description: "Front End Developer",
-		photo: "faniry_height.png",
+		assets: {
+			description: "Web Designer",
+			photo: "sariaka_height.png",
+		},
+		personalInfo: {
+			firstname: "Aina Sariaka",
+			lastname: "Andriamanana",
+		},
 	},
 	{
-		firstname: "Fanirintsoa Mathieu",
-		lastname: "Andrianandraina",
-		description: "Apprentice Developer",
-		photo: "faniry_height.png",
+		assets: {
+			description: "Developer Apprentice",
+			photo: "faniry_height.png",
+		},
+		personalInfo: {
+			firstname: "Fanirintsoa Mathieu",
+			lastname: "Andrianandraina",
+		},
 	},
 	{
-		firstname: "Tsiory Herinjato",
-		lastname: "Andriamahefa",
-		description: "UI/UX Designer",
-		photo: "faniry_height.png",
+		assets: {
+			description: "UI/UX Deveoper",
+			photo: "faniry_height.png",
+		},
+		personalInfo: {
+			firstname: "Tsiory Herinjato",
+			lastname: "Andriamahefa",
+		},
 	},
 ];
 

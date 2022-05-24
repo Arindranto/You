@@ -1,4 +1,11 @@
-# you
+# YOU
+
+## Group members:
+	- Mendrika Henintsoa HARIMALALA
+	- Aina Sariaka ANDRIAMANANA
+	- Fanirintsoa Mathieu ANDRIANANDRAINA
+	- Tsiory Herinjato ANDRIAMAHEFA
+	- Safidy Herinirina Arindranto ANDRIANTSOA
 
 ## Project setup
 ```

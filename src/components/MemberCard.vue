@@ -6,7 +6,7 @@
       * fullname (firstname + lastname)
       * description
    -->
-  <div class= "container" :class= "{hovered: hovered}" @mouseover= "toggleHovered" @mouseout= "toggleHovered">
+  <div class= "container" :class= "{hovered: hovered}" @mouseover= "toggleHovered" @mouseout= "toggleHovered" @click= '$emit("toMemberList")'> <!-- Emit toMemberList to be listened in the MemberList -->
     <img :src="photo" alt= "Image not found" class= "photo" />
     <div class= "name">{{ fullname }}</div>
     <div class= "description">{{ description }}</div>
@@ -33,6 +33,7 @@
       info: {
         // Required id number that is from the memberList variable
         default: {
+          id: 0,
           firstname: "Firstname",
           lastname: "LastName",
           description: "Description",
@@ -44,19 +45,15 @@
       // Data to use in the templates
       let hovered= false;
       /* We added default so no need to check it */
-      // if (!('firstname' in this.info && 'lastname' in this.info && 'photo' in this.info && 'description' in this.info))
-      //   console.log('Nothing to show');
-      // else {
-        const fullname= this.info.firstname + ' '+ this.info.lastname.toUpperCase();
-        const firstname = this.info.firstname;
-        const lastname = this.info.lastname.toUpperCase();
-        const photo= require(`@/assets/img/${this.info.photo}`);  // Require the image from the assets
-        const description= this.info.description;
-        const id= this.info.id
-        return {
-          fullname, photo, description, id, hovered, firstname, lastname
-        }
-      // }
+      const fullname= this.info.firstname + ' '+ this.info.lastname.toUpperCase();
+      const firstname = this.info.firstname;
+      const lastname = this.info.lastname.toUpperCase();
+      const photo= require(`@/assets/img/${this.info.photo}`);  // Require the image from the assets
+      const description= this.info.description;
+      const id= this.info.id
+      return {
+        fullname, photo, description, id, hovered, firstname, lastname
+      }
     },
     methods: {
       // The needed methods to manage the Vue
@@ -73,85 +70,93 @@
   /*
     NB: TO BE CHANGED
   */
-  @import '@/assets/style/colors.css'; /* Importing the base colors */
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+  @import '@/assets/style/style-data'; /* Importing the base colors */
 
   .description, .name, img {
     position: absolute;
     margin: 5px 10px;
   }
   .container {
-    /* the main container */
+    /* the mainn container */
     position: relative;
     height: 350px;
-    width: 215px;
+    width: 220px;
     margin: 10px;
+
     font-weight: 100;
-
-
-
     display: flex;
     flex-direction: column;
+
+    /* justify-content: center; */
     align-items: center;
+
     text-align: center;
     color: #ffffff;
+
     background: var(--vue-blue);
-    box-shadow: 0 0 40px rgb(0, 0, 0, 0.5);
+    /* border: solid 1px #ffffff; */
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, .5);
     border-radius: 20px;
+
     cursor: pointer;
-    transition: all .1s;
+    transition: all .3s;
     transition-timing-function: ease-in;
+
+    font-family: var(--desc-font);
   }
   .container::before{
-    /*  */
+    /* The green div on the MemberCard */
     content:"";
     border-radius: 20px 20px 0 0;
     position: absolute;
+   
     height: 30%;
     width: 100%;
     background: var(--vue-green);
-
   }
   img {
     /* the image */
     top: 3%;
-    height: 50%;
+    height: 52%;
     width: 80%;
     object-fit: cover;
+    
     border-radius: 50%;
+
+    /* padding: 15px;
+    margin: 15px; */
+
     background: var(--dark-blue);
   }
   .name {
     /* the fullname text */
-    top: 53%;
+    top: 54%;
     height: 75px;
     margin: 15px;
+
     display: grid;
     place-items: center;
+    
     letter-spacing: 1px;
+    line-height: 22px;
     font-size: 17px;
     font-weight: 900;
     vertical-align: center;
   }
   .description {
     /* the description text */
-    top: 85%;
+    top: 83%;
     font-weight: bold;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
-  /* Configuration for the .hovered class mentionned above (on hover) */
   .hovered {
+    /* Configuration for the .hovered class mentionned above (on hover) */
     /* .container:hover */
-    width: 220px;
+    width: 224px;
     height: 354px;
     margin: 8px;
+
     background:  var(--vue-green);
     color: var(--dark-blue);
     box-shadow: 0 10px 40px var(--dark-green);
   }
-
-  /*.hovered > img{
-     img on card hover 
-    background: white;
-  }*/
 </style>
