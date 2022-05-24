@@ -1,7 +1,7 @@
 <!-- The base of a ProfileThing -->
 <template>
 	<div>
-		<PersonalInfoSection v-model:personalInfo= "personalInfo" />
+		<PersonalInfoSection :personalInfo= "personalInfo" />
 	</div>
 </template>
 
@@ -38,7 +38,20 @@
 			return {
 				personalInfo,
 			}
-		}
+		},
+		/*computed: {
+			// member: memberList[this.id],	// Get the member data as an object
+			personalInfo() {
+				let member= memberList[this.id];
+				console.log('Computing');
+				return  {
+					firstname: member.personalInfo.firstname,
+					lastname: member.personalInfo.lastname,
+					birthdate: member.personalInfo.birthdate,
+					photo: member.assets.photo
+				}
+			}
+		}*/
 	}
 </script>
 

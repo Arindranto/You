@@ -4,7 +4,7 @@
       To generate the list of member cards,
       we use the v-for option to iterate over the memberList Array imported from @/datas/MemberList.js
     -->
-    <MemberCard v-for= "(member, index) in members" :key= "index" :id= "`card-${index}`" :info= "member" @toMemberList= "toHomePage" />
+    <MemberCard v-for= "(member, index) in members" :key= "index" :id= "`card-${index}`" :info= "member" @toMemberList= "$emit('toggleDisplay', index)" />
   </div>
 </template>
 
@@ -23,7 +23,6 @@
     components: {
       MemberCard,
     },
-    emits: ['smth'],
     data() {
       // Take firstname, lastname, description and photo path
       let members= [];  // To get the appropriate informations
@@ -42,12 +41,6 @@
         members,
       }
     },
-    methods: {
-      toHomePage(id) {
-        alert("alert " + id);
-        this.$emit('toggleDisplay', id);
-      }
-    }
   }
 
 </script>

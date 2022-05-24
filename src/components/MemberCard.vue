@@ -71,8 +71,7 @@
   /*
     NB: TO BE CHANGED
   */
-  @import '@/assets/style/colors.css'; /* Importing the base colors */
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+  @import '@/assets/style/style-data'; /* Importing the base colors */
 
   .description, .name, img {
     position: absolute;
@@ -148,7 +147,6 @@
 
     top: 83%;
     font-weight: bold;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
   /* Configuration for the .hovered class mentionned above (on hover) */
   .hovered {

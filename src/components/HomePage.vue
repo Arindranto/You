@@ -1,12 +1,10 @@
 <!-- THE HOME PAGE -->
 <template>
 	<!-- Title -->
-  <div :class= "{hidden: hidden}">
+  <div id= "main" :class= "{hidden: hidden}">
     <h1>"<span class= "vue-green">HELLO WORLD</span>" from the <span class= "vue-green">TEAM</span>!</h1>
     <!-- The member list -->
-    <div id= "main">
       <MemberList @toggleDisplay= "toggleHideClass" />
-    </div>
   </div>
 </template>
 
@@ -24,23 +22,32 @@
       }
     },
     methods: {
-      toggleHideClass() {
+      toggleHideClass(id) {
         this.hidden= !this.hidden;
+        setTimeout(2000);
+        console.log('To toggle profile mode');
+        this.$emit('toggleProfileMode', id);
       }
     }
 	}
 </script>
 
 <style scoped>
-	@import '@/assets/style/colors';
+	@import '@/assets/style/style-data';
 
+  @keyframes hideIt {
+    from {
+      width: 100%;
+    }
+    to {
+      width: 0;
+    }
+  }
 	h1 {
     font-size: max(3vw, 25px);
     letter-spacing: 2px;
 
     height: 40px;
-    margin: 30px;
-    text-align: center;
 
     color: #ffffff;
   }
@@ -52,12 +59,14 @@
     position: absolute;
 
     display: grid;
+    grid-template-rows: 120px auto;
     place-items: center;
 
-    height: calc(100% - 100px);
+    height: 100%;
     width: 100%;
   }
   .hidden {
-    display: none;
+    animation-name: hideIt;
+    animation-duration: 2s;
   }
 </style>

@@ -3,8 +3,10 @@
     To contain the main app
     HomePage and ProfilePage for the one page app
   -->
-  <HomePage />
-  <ProfilePage :id= "parseInt('1')" />
+  <div>
+    <HomePage v-if= "!profileMode" @toggleProfileMode= "toggleMode" />
+    <ProfilePage v-else :id= "id"/>
+  </div>
 </template>
 
 <script>
@@ -22,9 +24,16 @@
       HomePage,
       ProfilePage
     },
+    data() {
+      let profileMode= false;
+      return {
+        profileMode,
+      }
+    },
     methods: {
-      toggleHide() {
-        alert("received click");
+      toggleMode(id) {
+        this.profileMode= true;
+        this.id= id;
       }
     }
   }
@@ -32,7 +41,7 @@
 
 <style>
   /* NB: TO BE MODIFIED */
-  @import '@/assets/style/colors'; /* Importing the base colors */
+  @import '@/assets/style/style-data'; /* Importing the base colors */
 
   * {
     /* GENERAL SETTINGS */
