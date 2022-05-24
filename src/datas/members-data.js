@@ -9,16 +9,20 @@ let memberList= [
 		personalInfo: {
 			firstname: "Safidy Herinirina Arindranto",
 			lastname: "Andriantsoa",
+			faculty: "IGGLIA3",
+			age: "20 years",
 		},
 	},
 	{
 		assets: {
-			description: "Fullstack JavaScript Developer",
+			description: "Sofware Engineer Student",
 			photo: "mendrika_height.png",
 		},
 		personalInfo: {
 			firstname: "Mendrika Henintsoa",
 			lastname: "Harimalala",
+			faculty: "IGGLIA3",
+			age: "20 years",
 		},
 	},
 	{
@@ -29,16 +33,20 @@ let memberList= [
 		personalInfo: {
 			firstname: "Aina Sariaka",
 			lastname: "Andriamanana",
+			faculty: "IGGLIA3",
+			age: "20 years",
 		},
 	},
 	{
 		assets: {
-			description: "Developer Apprentice",
+			description: "Computer science student",
 			photo: "faniry_height.png",
 		},
 		personalInfo: {
 			firstname: "Fanirintsoa Mathieu",
 			lastname: "Andrianandraina",
+			faculty: "ISAIA3",
+			age: "21 years",
 		},
 	},
 	{
@@ -49,6 +57,8 @@ let memberList= [
 		personalInfo: {
 			firstname: "Tsiory Herinjato",
 			lastname: "Andriamahefa",
+			faculty: "ISAIA3",
+			age: "22 years",
 		},
 	},
 ];
