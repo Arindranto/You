@@ -100,7 +100,7 @@
 
     background: var(--vue-blue);
     /* border: solid 1px #ffffff; */
-    box-shadow: 0 0 40px rgb(0, 0, 0, 0.5);
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, .5);
     border-radius: 20px;
 
     cursor: pointer;
@@ -120,7 +120,7 @@
   img {
     /* the image */
     top: 3%;
-    height: 50%;
+    height: 53%;
     width: 80%;
     object-fit: cover;
     
@@ -133,7 +133,7 @@
   }
   .name {
     /* the fullname text */
-    top: 53%;
+    top: 54%;
     height: 75px;
     margin: 15px;
 
@@ -141,6 +141,7 @@
     place-items: center;
     
     letter-spacing: 1px;
+    line-height: 22px;
     font-size: 17px;
     font-weight: 900;
     vertical-align: center;
@@ -148,7 +149,7 @@
   .description {
     /* the description text */
 
-    top: 85%;
+    top: 83%;
     font-weight: bold;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }

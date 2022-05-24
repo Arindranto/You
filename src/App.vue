@@ -15,7 +15,7 @@
   */
   // @ === source path
   import MemberList from '@/components/MemberList'
-
+  
   export default {
     name: 'App',
     components: {

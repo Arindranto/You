@@ -13,7 +13,16 @@
 <script>
 	export default {
 		props: {
-
+			personalInfo: {
+				type: Object,
+				required: true,
+				default: {
+					firstname: 'Firstname',
+					lastname: 'Lastname',
+					birthdate: 'January 01st, 1970',
+					photo: 'logo.png',
+				}
+			}
 		}
 	}
 </script>

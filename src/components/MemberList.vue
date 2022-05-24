@@ -24,8 +24,16 @@
       MemberCard,
     },
     data() {
-      // const member= {firstname: "Andria", lastname: "Safidy", description: "Fullstack developper", photo: "logo.png"};
-      const members= memberList;
+      // Take firstname, lastname, description and photo path
+      let members= [];  // To get the appropriate informations
+      for (let member of memberList) {  // MemberList is an array so we use the of operator
+        members.push({
+          firstname: member.personalInfo.firstname,
+          lastname: member.personalInfo.lastname,
+          description: member.assets.description,
+          photo: member.assets.photo
+        });
+      }
       return {
         members,
       }
