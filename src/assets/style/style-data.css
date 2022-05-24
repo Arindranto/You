@@ -1,0 +1,10 @@
+/* Here are the base colors to be used in the project */
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap'); /* Importing fonts */
+:root {
+	--vue-blue: rgb(49, 66, 83);	/* The blue of the Vue logo */
+	--vue-green: rgb(65, 185, 130);	/* The green used in the Vue logo  */
+	--dark-blue: rgb(30, 40, 50);	/* A darker shade of blue */
+	--dark-green: rgb(35, 100, 70);	/* A darker shade of green */
+	--desc-font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	--title-font:  'Ubuntu', 'Arial black', sans-serif;
+}

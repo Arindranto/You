@@ -1,34 +1,50 @@
 <template>
   <!-- 
     To contain the main app
+    HomePage and ProfilePage for the one page app
+    We use v-if to render the correct page
   -->
-  <h1>"<span class= "vue-green">HELLO WORLD</span>" from the <span class= "vue-green">TEAM</span>!</h1>
-  <div id= "main">
-    <MemberList/>
+  <div>
+    <HomePage v-if= "id === null" @toggleProfileMode= "toggleMode" />
+    <ProfilePage v-else :id= "id" @goHome="toggleMode" />
   </div>
 </template>
 
 <script>
   /*
     components:
-      * MemberList: the list of member cards
+      * HomePage
+      * ProfilePage
+    data:
+      * profileMode: the Boolean to track either we are in profileMode or not, false by default
   */
-  // @ === source path
-  import MemberList from '@/components/MemberList'
+  import HomePage from '@/components/HomePage';
+  import ProfilePage from "@/components/ProfilePage";
 
   export default {
     name: 'App',
     components: {
-      // Components to include in the templates
-      MemberList,
+      HomePage,
+      ProfilePage
     },
+    data() {
+      let id= null; // To check if we are in profile mode
+      return {
+        id,
+      }
+    },
+    methods: {
+      toggleMode(id) {
+        // When a card is clicked, it goes all the way up to toggle this mode
+        this.id= id;
+      }
+    }
   }
 </script>
 
 <style>
   /* NB: TO BE MODIFIED */
-  @import '@/assets/style/colors.css'; /* Importing the base colors */
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+  @import '@/assets/style/style-data'; /* Importing the base colors */
 
   * {
     /* GENERAL SETTINGS */
@@ -48,30 +64,5 @@
     height: 100%;
     
     background: var(--dark-blue);
-    font-family: "ubuntu", sans-serif;
-  }
-  h1 {
-    font-size: max(3vw, 25px);
-    letter-spacing: 2px;
-    font-family: "ubuntu", sans-serif;
-
-    height: 40px;
-    margin: 30px;
-    text-align: center;
-
-    color: #ffffff;
-  }
-  .vue-green{
-    color: var(--vue-green);
-  }
-  #main {
-    /* The container of the application */
-    position: absolute;
-
-    display: grid;
-    place-items: center;
-
-    height: calc(100% - 100px);
-    width: 100%;
   }
 </style>
