@@ -2,10 +2,11 @@
   <!-- 
     To contain the main app
     HomePage and ProfilePage for the one page app
+    We use v-if to render the correct page
   -->
   <div>
-    <HomePage v-if= "!profileMode" @toggleProfileMode= "toggleMode" />
-    <ProfilePage v-else :id= "id"/>
+    <HomePage v-if= "id === null" @toggleProfileMode= "toggleMode" />
+    <ProfilePage v-else :id= "id" @goHome="toggleMode" />
   </div>
 </template>
 
@@ -14,6 +15,8 @@
     components:
       * HomePage
       * ProfilePage
+    data:
+      * profileMode: the Boolean to track either we are in profileMode or not, false by default
   */
   import HomePage from '@/components/HomePage';
   import ProfilePage from "@/components/ProfilePage";
@@ -25,14 +28,14 @@
       ProfilePage
     },
     data() {
-      let profileMode= false;
+      let id= null; // To check if we are in profile mode
       return {
-        profileMode,
+        id,
       }
     },
     methods: {
       toggleMode(id) {
-        this.profileMode= true;
+        // When a card is clicked, it goes all the way up to toggle this mode
         this.id= id;
       }
     }
@@ -61,6 +64,5 @@
     height: 100%;
     
     background: var(--dark-blue);
-    font-family: rounded-arial, arial, sans-serif;
   }
 </style>

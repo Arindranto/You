@@ -1,11 +1,14 @@
-<!-- The base of a ProfileThing -->
+<!-- A simple PersonalInfoSection test -->
 <template>
 	<div>
-			<h2>{{fullname}}</h2>
+			<h2><span class= 'vue-green'>{{personalInfo.firstname}}</span> {{personalInfo.lastname}}</h2>
 	</div>
 </template>
 
 <script>
+	/* props:
+			* personalInfo: to get the information needed to be displayed such as firstname, lastname, etc... 
+	*/
 	export default {
 		props: {
 			personalInfo: {
@@ -28,5 +31,9 @@
 </script>
 
 <style scoped>
-	
+	@import '@/assets/style/style-data';
+
+	.vue-green {
+		color: var(--vue-green);
+	}
 </style>

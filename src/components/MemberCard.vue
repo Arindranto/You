@@ -7,7 +7,7 @@
       * fullname (firstname + lastname)
       * description
    -->
-  <div class= "container" :class= "{hovered: hovered}" @mouseover= "toggleHovered" @mouseout= "toggleHovered" @click= '$emit("toMemberList", id)'>
+  <div class= "container" :class= "{hovered: hovered}" @mouseover= "toggleHovered" @mouseout= "toggleHovered" @click= '$emit("toMemberList")'> <!-- Emit toMemberList to be listened in the MemberList -->
     <img :src="photo" alt= "Image not found" class= "photo" />
     <div class= "name">{{ fullname }}</div>
     <div class= "description">{{ description }}</div>
@@ -102,9 +102,11 @@
     cursor: pointer;
     transition: all .3s;
     transition-timing-function: ease-in;
+
+    font-family: var(--desc-font);
   }
-  /* The green div on the MemberCard */
   .container::before{
+    /* The green div on the MemberCard */
     content:"";
     border-radius: 20px 20px 0 0;
     position: absolute;
@@ -144,12 +146,11 @@
   }
   .description {
     /* the description text */
-
     top: 83%;
     font-weight: bold;
   }
-  /* Configuration for the .hovered class mentionned above (on hover) */
   .hovered {
+    /* Configuration for the .hovered class mentionned above (on hover) */
     /* .container:hover */
     width: 224px;
     height: 354px;
@@ -159,9 +160,4 @@
     color: var(--dark-blue);
     box-shadow: 0 10px 40px var(--dark-green);
   }
-
-  /*.hovered > img{
-     img on card hover 
-    background: white;
-  }*/
 </style>

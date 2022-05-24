@@ -3,6 +3,7 @@
     <!-- 
       To generate the list of member cards,
       we use the v-for option to iterate over the memberList Array imported from @/datas/MemberList.js
+      * emit toggleDisplay when a card is clicked, index is the id of the member to be displayed in the ProfilePage
     -->
     <MemberCard v-for= "(member, index) in members" :key= "index" :id= "`card-${index}`" :info= "member" @toMemberList= "$emit('toggleDisplay', index)" />
   </div>
@@ -13,7 +14,7 @@
     components:
       * MemberCard: to display the MemberCard in the template
     datas:
-      * members: contains the elements in memberList
+      * members: get the appropriate datas in the MemberList such as firstname, etc... to pass to the MemberCards
   */
   import MemberCard from '@/components/MemberCard'; // Card member
   import memberList from '@/datas/members-data';  // Importing the list memberList of type Array

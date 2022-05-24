@@ -1,7 +1,11 @@
-<!-- THE HOME PAGE -->
+<!-- THE HOME PAGE 
+  content:
+    * title
+    * MemberList object
+-->
 <template>
-	<!-- Title -->
   <div id= "main" :class= "{hidden: hidden}">
+    <!-- Title -->
     <h1>"<span class= "vue-green">HELLO WORLD</span>" from the <span class= "vue-green">TEAM</span>!</h1>
     <!-- The member list -->
       <MemberList @toggleDisplay= "toggleHideClass" />
@@ -9,6 +13,11 @@
 </template>
 
 <script>
+  /* data:
+      * hidden: to toggle the hidden class
+    methods:
+      * toggleHideClass: changes the hidden data and emits the toggleProfileMode to the App
+  */
 	import MemberList from '@/components/MemberList';
 
 	export default {
@@ -23,9 +32,8 @@
     },
     methods: {
       toggleHideClass(id) {
+        /* emit the event to the App to toggle the profileMode */
         this.hidden= !this.hidden;
-        setTimeout(2000);
-        console.log('To toggle profile mode');
         this.$emit('toggleProfileMode', id);
       }
     }
@@ -35,7 +43,10 @@
 <style scoped>
 	@import '@/assets/style/style-data';
 
+  /* To change */
+
   @keyframes hideIt {
+    /* Animation (doesn't work yet) */
     from {
       width: 100%;
     }
@@ -44,14 +55,15 @@
     }
   }
 	h1 {
+    font-family: var(--title-font);
     font-size: max(3vw, 25px);
     letter-spacing: 2px;
-
-    height: 40px;
+    text-align: center;
 
     color: #ffffff;
   }
   .vue-green{
+    /* Special span in h1 */
     color: var(--vue-green);
   }
   #main {
@@ -59,7 +71,7 @@
     position: absolute;
 
     display: grid;
-    grid-template-rows: 120px auto;
+    grid-template-rows: 100px auto;
     place-items: center;
 
     height: 100%;

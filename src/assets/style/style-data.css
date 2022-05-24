@@ -5,4 +5,6 @@
 	--vue-green: rgb(65, 185, 130);	/* The green used in the Vue logo  */
 	--dark-blue: rgb(30, 40, 50);	/* A darker shade of blue */
 	--dark-green: rgb(35, 100, 70);	/* A darker shade of green */
+	--desc-font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	--title-font:  'Ubuntu', 'Arial black', sans-serif;
 }
