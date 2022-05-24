@@ -24,7 +24,7 @@
       }
     },
     methods: {
-      toggleHideClass(id) {
+      toggleHideClass() {
         this.hidden= !this.hidden;
       }
     }

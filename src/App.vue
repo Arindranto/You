@@ -4,7 +4,7 @@
     HomePage and ProfilePage for the one page app
   -->
   <HomePage />
-  <ProfilePage id= 2 />
+  <ProfilePage :id= "parseInt('1')" />
 </template>
 
 <script>
@@ -21,6 +21,11 @@
     components: {
       HomePage,
       ProfilePage
+    },
+    methods: {
+      toggleHide() {
+        alert("received click");
+      }
     }
   }
 </script>

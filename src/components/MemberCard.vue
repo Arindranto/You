@@ -7,7 +7,7 @@
       * fullname (firstname + lastname)
       * description
    -->
-  <div class= "container" :class= "{hovered: hovered}" @mouseover= "toggleHovered" @mouseout= "toggleHovered" @click= '$emit("clickOn", id)'>
+  <div class= "container" :class= "{hovered: hovered}" @mouseover= "toggleHovered" @mouseout= "toggleHovered" @click= '$emit("toMemberList", id)'>
     <img :src="photo" alt= "Image not found" class= "photo" />
     <div class= "name">{{ fullname }}</div>
     <div class= "description">{{ description }}</div>
