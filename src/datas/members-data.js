@@ -13,8 +13,8 @@ let memberList= [
 	},
 	{
 		assets: {
-			description: "Fullstack JavaScript Developer",
-			photo: "faniry_height.png",
+			description: "Sofware Engineer Student",
+			photo: "mendrika_height.png",
 		},
 		personalInfo: {
 			firstname: "Mendrika Henintsoa",
@@ -56,8 +56,4 @@ let memberList= [
 export default memberList;
 /*{
 	memberList: memberList,	// Because it is an array, exporting it without precising the variable would cause it to consider memberList as an object
-<<<<<<< HEAD
 }*/
-=======
-}*/
->>>>>>> fc66a8ebe477f3a2b77155a382cded6be67748dd
