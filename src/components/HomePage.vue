@@ -1,10 +1,12 @@
 <!-- THE HOME PAGE -->
 <template>
 	<!-- Title -->
-  <h1>"<span class= "vue-green">HELLO WORLD</span>" from the <span class= "vue-green">TEAM</span>!</h1>
-  <!-- The member list -->
-  <div id= "main">
-    <MemberList />
+  <div :class= "{hidden: hidden}">
+    <h1>"<span class= "vue-green">HELLO WORLD</span>" from the <span class= "vue-green">TEAM</span>!</h1>
+    <!-- The member list -->
+    <div id= "main">
+      <MemberList @toggleDisplay= "toggleHideClass" />
+    </div>
   </div>
 </template>
 
@@ -14,7 +16,18 @@
 	export default {
 		components: {
 			MemberList,
-		}
+		},
+    data() {
+      let hidden= false;
+      return {
+        hidden,
+      }
+    },
+    methods: {
+      toggleHideClass(id) {
+        this.hidden= !this.hidden;
+      }
+    }
 	}
 </script>
 
@@ -43,5 +56,8 @@
 
     height: calc(100% - 100px);
     width: 100%;
+  }
+  .hidden {
+    display: none;
   }
 </style>

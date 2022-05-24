@@ -7,7 +7,7 @@
       * fullname (firstname + lastname)
       * description
    -->
-  <div class= "container" :class= "{hovered: hovered}" @mouseover= "toggleHovered" @mouseout= "toggleHovered">
+  <div class= "container" :class= "{hovered: hovered}" @mouseover= "toggleHovered" @mouseout= "toggleHovered" @click= '$emit("clickOn", id)'>
     <img :src="photo" alt= "Image not found" class= "photo" />
     <div class= "name">{{ fullname }}</div>
     <div class= "description">{{ description }}</div>
@@ -34,6 +34,7 @@
       info: {
         // Required id number that is from the memberList variable
         default: {
+          id: 0,
           firstname: "Firstname",
           lastname: "LastName",
           description: "Description",
@@ -45,19 +46,15 @@
       // Data to use in the templates
       let hovered= false;
       /* We added default so no need to check it */
-      // if (!('firstname' in this.info && 'lastname' in this.info && 'photo' in this.info && 'description' in this.info))
-      //   console.log('Nothing to show');
-      // else {
-        const fullname= this.info.firstname + ' '+ this.info.lastname.toUpperCase();
-        const firstname = this.info.firstname;
-        const lastname = this.info.lastname.toUpperCase();
-        const photo= require(`@/assets/img/${this.info.photo}`);  // Require the image from the assets
-        const description= this.info.description;
-        const id= this.info.id
-        return {
-          fullname, photo, description, id, hovered, firstname, lastname
-        }
-      // }
+      const fullname= this.info.firstname + ' '+ this.info.lastname.toUpperCase();
+      const firstname = this.info.firstname;
+      const lastname = this.info.lastname.toUpperCase();
+      const photo= require(`@/assets/img/${this.info.photo}`);  // Require the image from the assets
+      const description= this.info.description;
+      const id= this.info.id
+      return {
+        fullname, photo, description, id, hovered, firstname, lastname
+      }
     },
     methods: {
       // The needed methods to manage the Vue
@@ -107,6 +104,7 @@
     transition: all .3s;
     transition-timing-function: ease-in;
   }
+  /* The green div on the MemberCard */
   .container::before{
     content:"";
     border-radius: 20px 20px 0 0;
@@ -115,12 +113,11 @@
     height: 30%;
     width: 100%;
     background: var(--vue-green);
-
   }
   img {
     /* the image */
     top: 3%;
-    height: 53%;
+    height: 52%;
     width: 80%;
     object-fit: cover;
     

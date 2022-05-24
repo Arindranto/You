@@ -1,7 +1,7 @@
 <!-- The base of a ProfileThing -->
 <template>
 	<div>
-		<PersonalInfoSection :personalInfo= "personalInfo" />
+		<PersonalInfoSection v-model:personalInfo= "personalInfo" />
 	</div>
 </template>
 
@@ -43,5 +43,7 @@
 </script>
 
 <style scoped>
-	
+	* {
+		color: #ffffff;
+	}
 </style>
