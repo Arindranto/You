@@ -5,8 +5,8 @@
     We use v-if to render the correct page
   -->
   <div>
-    <HomePage v-if= "id === null" @toggleProfileMode= "toggleMode" />
-    <ProfilePage v-else :id= "id" @goHome="toggleMode" />
+    <HomePage v-if= "id === null" @passToApp= "update" />
+    <ProfilePage v-else :id= "id" @passToApp="update" />
   </div>
 </template>
 
@@ -34,8 +34,8 @@
       }
     },
     methods: {
-      toggleMode(id) {
-        // When a card is clicked, it goes all the way up to toggle this mode
+      update(id) {
+        // Updating the id so that it shows the appropriate member or the HOME PAGE if id === null
         this.id= id;
       }
     }

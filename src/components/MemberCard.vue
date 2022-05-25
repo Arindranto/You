@@ -1,3 +1,4 @@
+<!-- Test Faniry -->
 <template>
   <!-- Class to manage a singular member card
     "hovered" class is linked to "hovered" data (this.hovered) to toggle it on mouseover and mouseout events,
@@ -6,7 +7,7 @@
       * fullname (firstname + lastname)
       * description
    -->
-  <div class= "container" :class= "{hovered: hovered}" @mouseover= "toggleHovered" @mouseout= "toggleHovered" @click= '$emit("toMemberList")'> <!-- Emit toMemberList to be listened in the MemberList -->
+  <div class= "container" :class= "{hovered: hovered}" @mouseover= "toggleHovered" @mouseout= "toggleHovered" @click= '$emit("passToMemberList")'> <!-- Emit an event that will pass to listened in the MemberList -->
     <img :src="photo" alt= "Image not found" class= "photo" />
     <div class= "name">{{ fullname }}</div>
     <div class= "description">{{ description }}</div>
@@ -60,7 +61,7 @@
       toggleHovered() {
         // Toggle the hovered properties for the card
         this.hovered= !this.hovered
-      }
+      },
     }
   }
 </script>

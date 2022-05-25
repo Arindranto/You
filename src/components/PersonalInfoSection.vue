@@ -1,9 +1,11 @@
 <!-- A simple PersonalInfoSection test -->
 <template>
-	<div>
-			<h2><span class= 'vue-green'>{{personalInfo.firstname}}</span> {{personalInfo.lastname}} {{personalInfo.faculty}}</h2>
-			
-	</div>
+	<section>
+		<h1><span class= "vue-green">{{ personalInfo.firstname }}</span> {{ personalInfo.lastname.toUpperCase() }}</h1>
+		<div id= "#content">
+			{{ personalInfo.age }} years old <span class= "vue-green">{{personalInfo.description}}</span>
+		</div>
+	</section>
 </template>
 
 <script>
@@ -17,16 +19,10 @@
 				default: {
 					firstname: 'Firstname',
 					lastname: 'Lastname',
-					faculty: 'January 01st, 1970',
+					description: 'Description',
+					age: 18,
 					photo: 'logo.png',
 				}
-			}
-		},
-		data() {
-			const fullname= this.personalInfo.firstname + ' ' + this.personalInfo.lastname.toUpperCase();
-			const faculty= this.personalInfo.faculty ;
-			return {
-				fullname, faculty,
 			}
 		},
 	}
@@ -35,6 +31,17 @@
 <style scoped>
 	@import '@/assets/style/style-data';
 
+	section {
+		font-family: var(--title-font);
+		color: #ffffff;
+	}	
+	#content {
+		/* Container */
+		border: solid 2px #ffffff;
+		padding: 25px;
+		border-radius: 10px;
+		color: #ffffff;
+	}
 	.vue-green {
 		color: var(--vue-green);
 	}
