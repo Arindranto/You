@@ -1,7 +1,8 @@
 <!-- A simple PersonalInfoSection test -->
 <template>
 	<div>
-			<h2><span class= 'vue-green'>{{personalInfo.firstname}}</span> {{personalInfo.lastname}}</h2>
+			<h2><span class= 'vue-green'>{{personalInfo.firstname}}</span> {{personalInfo.lastname}} {{personalInfo.faculty}}</h2>
+			
 	</div>
 </template>
 
@@ -16,15 +17,16 @@
 				default: {
 					firstname: 'Firstname',
 					lastname: 'Lastname',
-					birthdate: 'January 01st, 1970',
+					faculty: 'January 01st, 1970',
 					photo: 'logo.png',
 				}
 			}
 		},
 		data() {
 			const fullname= this.personalInfo.firstname + ' ' + this.personalInfo.lastname.toUpperCase();
+			const faculty= this.personalInfo.faculty ;
 			return {
-				fullname,
+				fullname, faculty,
 			}
 		},
 	}

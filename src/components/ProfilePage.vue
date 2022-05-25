@@ -38,7 +38,7 @@
 			let personalInfo= {
 				firstname: member.personalInfo.firstname,
 				lastname: member.personalInfo.lastname,
-				birthdate: member.personalInfo.birthdate,
+				faculty: member.personalInfo.faculty,
 				photo: member.assets.photo
 			}
 			return {
@@ -52,15 +52,24 @@
 	/* To be changed */
 	* {
 		color: #ffffff;
+		font-family: "ubuntu";
 	}
 	#container {
 		display: grid;
 		place-items: center;
 	}
 	button {
-		height: 20px;
-		width: 50px;
+		height: 45px;
+		width: 100px;
 		cursor: pointer;
-		color: black;
+		color: rgb(255, 255, 255);
+		background-color: var(--vue-green);
+		border: none;
+		font-size: 20px;
+		border-radius: 15px;
+	}
+		button:hover {
+		background-color: var(--dark-green);
+		
 	}
 </style>
