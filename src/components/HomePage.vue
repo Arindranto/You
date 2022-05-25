@@ -6,9 +6,9 @@
 <template>
   <div id= "main" :class= "{hidden: hidden}">
     <!-- Title -->
-    <h1>"<span class= "vue-green">HELLO WORLD</span>" from the <span class= "vue-green">TEAM</span>!</h1>
+    <h1 v-if= "!hidden">"<span class= "vue-green">HELLO WORLD</span>" from the <span class= "vue-green">TEAM</span>!</h1>
     <!-- The member list -->
-      <MemberList @toggleDisplay= "toggleHideClass" />
+      <MemberList v-if= "!hidden" @passToHomePage= "passToApp" />
   </div>
 </template>
 
@@ -31,10 +31,11 @@
       }
     },
     methods: {
-      toggleHideClass(id) {
+      passToApp(id) {
         /* emit the event to the App to toggle the profileMode */
         this.hidden= !this.hidden;
-        this.$emit('toggleProfileMode', id);
+        // After the animation, we pass the id to App as an event
+        setTimeout(this.$emit.bind(this, 'passToApp', id), 100);
       }
     }
 	}
@@ -49,9 +50,10 @@
     /* Animation (doesn't work yet) */
     from {
       width: 100%;
+      display: block;
     }
     to {
-      width: 0;
+      width: 100px;
     }
   }
 	h1 {
@@ -78,7 +80,9 @@
     width: 100%;
   }
   .hidden {
+    background: var(--vue-blue);
     animation-name: hideIt;
-    animation-duration: 2s;
+    animation-duration: .1s;
+    animation-fill-mode: forwards;
   }
 </style>

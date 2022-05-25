@@ -1,8 +1,17 @@
 <!-- The base of a ProfileThing -->
 <template>
 	<div id= "container">
+		<!-- SIDEBAR -->
+		<div id= "sidebar">
+			<MemberList @passToProfilePage= "passToApp" :selected= "id" />
+			<button class= "back-btn" @click= "passToApp(null)">
+				<div id= "back-arrow">
+				</div>
+			</button>
+		</div>
+
+		<!-- SECTIONS GO HERE -->
 		<PersonalInfoSection :personalInfo= "personalInfo" />
-		<button @click= '$emit("goHome", null)' >Back</button>
 	</div>
 </template>
 
@@ -19,12 +28,14 @@
 			* personalInfo: an object with the informations from memberList to pass to the PersonalInfoSection
 	*/
 	import PersonalInfoSection from '@/components/PersonalInfoSection';
-	import memberList from '@/datas/members-data'
+	import MemberList from '@/components/MemberList'
+	import memberList from '@/datas/members-data';
 
 	export default {
 		name: 'ProfilePage',
 		components: {
 			PersonalInfoSection,
+			MemberList
 		},
 		props: {
 			id: {
@@ -32,35 +43,80 @@
 				default: 0
 			}
 		},
-		data() {
-			let member= memberList[this.id];	// Get the member data as an object
+		computed: {
+			// Because it's computed everytime
+			personalInfo() {
+				let member= memberList[this.id];	// Get the member data as an object
 
-			let personalInfo= {
-				firstname: member.personalInfo.firstname,
-				lastname: member.personalInfo.lastname,
-				birthdate: member.personalInfo.birthdate,
-				photo: member.assets.photo
-			}
-			return {
-				personalInfo,
+				let me= {
+					firstname: member.personalInfo.firstname,
+					lastname: member.personalInfo.lastname,
+					age: member.personalInfo.age,
+					description: member.assets.description,
+					photo: member.assets.photo
+				}
+				return me;
 			}
 		},
+		methods: {
+			passToApp(id) {
+				this.$emit('passToApp', id);
+			}
+		}
 	}
 </script>
 
 <style scoped>
 	/* To be changed */
+	@import '@/assets/style/style-data'
+
 	* {
 		color: #ffffff;
 	}
 	#container {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		padding-left: 110px;
+	}
+	#sidebar {
+		position: absolute;
+		text-align: center;
+		left: 0;
+		background: var(--vue-blue);
+		width: 80px;
+		height: 100%;
+		padding-top: 20px;
+	}
+	.back-btn {
+		position: absolute;
 		display: grid;
 		place-items: center;
-	}
-	button {
-		height: 20px;
-		width: 50px;
+		bottom: 20px;
+		left: 10px;
+		height: 60px;
+		width: 60px;
+		border: solid 5px var(--dark-blue);
+		border-radius: 50%;
 		cursor: pointer;
 		color: black;
+		font-weight: 900;
+		font-size: 20px;
+		background: rgba(0,0,0,0);
+	}
+	#back-arrow {
+		width: 25px;
+		height: 25px;
+		border-bottom: solid 7px var(--dark-blue);
+		border-left: solid 7px var(--dark-blue);
+		border-radius: 5px;
+		transform: translateX(3.5px) rotate(45deg);
+	}
+	.back-btn:hover {
+		border-color: var(--vue-green);
+	}
+	.back-btn:hover #back-arrow{
+		border-left-color: var(--vue-green);
+		border-bottom-color:  var(--vue-green);
 	}
 </style>
