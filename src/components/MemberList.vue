@@ -48,6 +48,8 @@
           id: i,
           firstname: member.personalInfo.firstname,
           lastname: member.personalInfo.lastname,
+          college: member.educationInfo.college,
+          lycee: member.educationInfo.lycee,
           description: member.assets.description,
           photo: member.assets.photo
         });

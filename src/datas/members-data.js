@@ -11,6 +11,11 @@ let memberList= [
 			lastname: "Andriantsoa",
 			age: 20
 		},
+		educationInfo: {
+			college: "Ndf",
+			lycee: "Nadf",
+			univ: "Ndzzzzzzf",
+		}
 	},
 	{
 		assets: {
@@ -22,6 +27,11 @@ let memberList= [
 			lastname: "Harimalala",
 			age: 20
 		},
+		educationInfo: {
+			college: "Ndf",
+			lycee: "Nadf",
+			univ: "Ndsdfsdfhjkf",
+		}
 	},
 	{
 		assets: {
@@ -33,6 +43,11 @@ let memberList= [
 			lastname: "Andriamanana",
 			age: 20
 		},
+		educationInfo: {
+			college: "Ndf",
+			lycee: "Nadf",
+			univ: "Ndfgdfgdf",
+		}
 	},
 	{
 		assets: {
@@ -44,6 +59,11 @@ let memberList= [
 			lastname: "Andrianandraina",
 			age: 21
 		},
+		educationInfo: {
+			college: "Ndf",
+			lycee: "Nadf",
+			univ: "Niiidf",
+		}
 	},
 	{
 		assets: {
@@ -55,6 +75,11 @@ let memberList= [
 			lastname: "Andriamahefa",
 			age: 21
 		},
+		educationInfo: {
+			college: "Ndf",
+			lycee: "Nardf",
+			univ: "Ndeef",
+		}
 	},
 ];
 

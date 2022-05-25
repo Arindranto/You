@@ -4,14 +4,16 @@
 		<!-- SIDEBAR -->
 		<div id= "sidebar">
 			<MemberList @passToProfilePage= "passToApp" :selected= "id" />
-			<button class= "back-btn" @click= "passToApp(null)">
+			<button class="back-btn" @click= "passToApp(null)">
 				<div id= "back-arrow">
 				</div>
 			</button>
 		</div>
 
 		<!-- SECTIONS GO HERE -->
-		<PersonalInfoSection :personalInfo= "personalInfo" />
+		<PersonalInfoSection class="personInfo" :personalInfo= "personalInfo" />
+		<EducationSection :educationInfo= "educationInfo" />
+
 	</div>
 </template>
 
@@ -27,7 +29,8 @@
 		data:
 			* personalInfo: an object with the informations from memberList to pass to the PersonalInfoSection
 	*/
-	import PersonalInfoSection from '@/components/PersonalInfoSection';
+	import PersonalInfoSection from '@/components/MemberInfo/PersonalInfoSection.vue';
+	import EducationSection from '@/components/MemberInfo/EducationSection.vue';
 	import MemberList from '@/components/MemberList'
 	import memberList from '@/datas/members-data';
 
@@ -35,6 +38,7 @@
 		name: 'ProfilePage',
 		components: {
 			PersonalInfoSection,
+			EducationSection,
 			MemberList
 		},
 		props: {
@@ -53,10 +57,22 @@
 					lastname: member.personalInfo.lastname,
 					age: member.personalInfo.age,
 					description: member.assets.description,
-					photo: member.assets.photo
+					photo: member.assets.photo,
+					college: member.educationInfo.college
+				}
+				return me;
+			},
+			educationInfo() {
+				let member= memberList[this.id];	// Get the member data as an object
+
+				let me= {
+
+					college: member.educationInfo.college,
+					lycee: member.educationInfo.lycee,
 				}
 				return me;
 			}
+			
 		},
 		methods: {
 			passToApp(id) {
@@ -68,7 +84,7 @@
 
 <style scoped>
 	/* To be changed */
-	@import '@/assets/style/style-data'
+	@import '@/assets/style/style-data';
 
 	* {
 		color: #ffffff;
@@ -96,7 +112,7 @@
 		left: 10px;
 		height: 60px;
 		width: 60px;
-		border: solid 5px var(--dark-blue);
+		border: solid 5px var(--vue-green);
 		border-radius: 50%;
 		cursor: pointer;
 		color: black;
@@ -107,16 +123,31 @@
 	#back-arrow {
 		width: 25px;
 		height: 25px;
-		border-bottom: solid 7px var(--dark-blue);
-		border-left: solid 7px var(--dark-blue);
+		border-bottom: solid 7px var(--vue-green);
+		border-left: solid 7px var(--vue-green);
 		border-radius: 5px;
 		transform: translateX(3.5px) rotate(45deg);
 	}
 	.back-btn:hover {
-		border-color: var(--vue-green);
+		border-color: var(--dark-blue);
 	}
 	.back-btn:hover #back-arrow{
-		border-left-color: var(--vue-green);
-		border-bottom-color:  var(--vue-green);
+		border-left-color: var(--dark-blue);
+		border-bottom-color:  var(--dark-blue);
 	}
+	.personInfo {
+	animation: andrana 0.2s;
+	justify-content: center;
+	align-self: center;
+    }
+	@keyframes andrana{
+		0%{
+			transform: translateX(400px) ;
+			}
+		100%{
+			transform: translatex(0);
+			}
+	}
+
+
 </style>

@@ -35,7 +35,7 @@
         /* emit the event to the App to toggle the profileMode */
         this.hidden= !this.hidden;
         // After the animation, we pass the id to App as an event
-        setTimeout(this.$emit.bind(this, 'passToApp', id), 100);
+        setTimeout(this.$emit.bind(this, 'passToApp', id), 250);
       }
     }
 	}
@@ -82,7 +82,7 @@
   .hidden {
     background: var(--vue-blue);
     animation-name: hideIt;
-    animation-duration: .1s;
+    animation-duration: .3s;
     animation-fill-mode: forwards;
   }
 </style>

@@ -37,20 +37,18 @@
 		width: 100%;
 		cursor: pointer;
 	}
-	.back:hover {
-		background: var(--dark-blue);
-	}
+
 	.back:hover img {
 		padding: 0;
-		background: var(--vue-blue);
+		box-shadow: 0 0 10px var(--vue-green);
 	}
 	/* The actually active component */
 	.active img {
 		padding: 0;
 		background: var(--vue-green);
-		box-shadow: 0 0 10px #ffffff;
+		box-shadow: 0 0 10px var(--dark-green);
 	}
-	.active:hover {
-		background: var(--vue-green);
+	.active:hover img{
+		box-shadow: 0 0 20px var(--dark-green);
 	}
 </style>
