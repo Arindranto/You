@@ -36,7 +36,7 @@ let memberList= [
 	},
 	{
 		assets: {
-			description: "Developer Apprentice",
+			description: "Computer Science Student",
 			photo: "faniry_height.png",
 		},
 		personalInfo: {
