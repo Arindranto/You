@@ -1,0 +1,17 @@
+[33mcommit 7b40db0afba80c58b58318c43897262ce0a8854e[m[33m ([m[1;36mHEAD -> [m[1;32mRouting[m[33m, [m[1;31morigin/MemberCardsConfig[m[33m, [m[1;32mMemberCardsConfig[m[33m)[m
+Author: Arindranto <safidy.herinirina@gmail.com>
+Date:   Sun May 22 01:38:46 2022 +0300
+
+    Data adding and first Homepage template with according styles and SFCs
+
+[33mcommit 897f48ef15531a7eaa72d46197804ac599f75f36[m
+Author: Arindranto <safidy.herinirina@gmail.com>
+Date:   Sat May 21 11:41:48 2022 +0300
+
+    MemberCard.vue created and added datas in MemberList.js
+
+[33mcommit 611945ced9b2366f890059ad3dc62d54084733e4[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m
+Author: Arindranto <safidy.herinirina@gmail.com>
+Date:   Thu May 19 20:12:05 2022 +0300
+
+    Initial commit, basic Hello World in VueJS
