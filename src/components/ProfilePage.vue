@@ -2,6 +2,7 @@
 <template>
 	<div id= "container">
 		<!-- SIDEBAR -->
+		
 		<div id= "sidebar">
 			<MemberList @passToProfilePage= "passToApp" :selected= "id" />
 			<button class="back-btn" @click= "passToApp(null)">
@@ -18,7 +19,7 @@
 		
 			<SkillsSection class="grid-child" :skillsInfo= "skillsInfo"/>
 			
-			<ExperienceSection class="grid-child" :educationInfo= "educationInfo"/>
+			<ExperienceSection class="grid-child" :experienceInfo= "experienceInfo"/>
 		</div>
 	</div>
 </template>
@@ -35,10 +36,10 @@
 		data:
 			* personalInfo: an object with the informations from memberList to pass to the PersonalInfoSection
 	*/
-	import PersonalInfoSection from '@/components/PersonalInfoSection';
-	import EducationSection from '@/components/EducationSection';
-	import SkillsSection from '@/components/SkillsSection';
-	import ExperienceSection from '@/components/ExperienceSection';
+	import PersonalInfoSection from '@/components/Section/PersonalInfoSection';
+	import EducationSection from '@/components/Section/EducationSection';
+	import SkillsSection from '@/components/Section/SkillsSection';
+	import ExperienceSection from '@/components/Section/ExperienceSection';
 	import MemberList from '@/components/MemberList';
 	import memberList from '@/datas/members-data';
 
@@ -69,7 +70,9 @@
 					age: member.personalInfo.age,
 					description: member.assets.description,
 					faculty: member.personalInfo.faculty,
-					photo: member.assets.photo
+					photo: member.assets.photo,
+          tel: member.personalInfo.tel,
+          email: member.personalInfo.email
 				}
 				return me;
 			},
@@ -96,6 +99,13 @@
 				}
 				return me;
 			},
+      experienceInfo() {
+				let member= memberList[this.id];
+				let me= {
+					project: member.experienceInfo
+				}
+				return me;
+			},
 		},
 		methods: {
 			passToApp(id) {
@@ -110,9 +120,10 @@
 	@import '@/assets/style/style-data';
 
 	* {
+		list-style: none;
 		color: #ffffff;
 	}
-	
+
 	#container {
 		position: absolute;
 		height: 100%;
@@ -167,22 +178,20 @@
 		transition-timing-function: ease-in;
 	}
 	/*Grid positionning */
+	.grid {
+		display: grid;
+		grid-gap: 10px;
+		grid-template-columns: repeat(1, 1fr);
+	}
 	.grid-child {
-		max-width: 700px;
-		border: var(--vue-green) solid 3px;
-		border-radius: 20px;
-		padding: 10px;
+		padding: 20px;
+		border-radius: 23px;
+		border: 2.5px solid var(--vue-green);
+		box-shadow: 0 0 5px var(--dark-green);
 	}
 	.grid-child:nth-child(1){
 		background-color: var(--vue-blue);
-
-	}
-	.grid {
-		margin-top: 10px;
-		display: grid;
-		grid-gap: 20px;
-		grid-template-columns: repeat(auto-fill, 600px);
-		
+		min-height: 280px;
 	}
 
 

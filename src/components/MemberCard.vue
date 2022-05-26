@@ -1,4 +1,3 @@
-<!-- Test Faniry -->
 <template>
   <!-- Class to manage a singular member card
     "hovered" class is linked to "hovered" data (this.hovered) to toggle it on mouseover and mouseout events,
@@ -95,7 +94,6 @@
     color: #ffffff;
 
     background: var(--vue-blue);
-    /* border: solid 1px #ffffff; */
     box-shadow: 0 0 15px 1px rgba(0, 0, 0, .5);
     border-radius: 20px;
 

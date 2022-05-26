@@ -10,7 +10,9 @@ let memberList= [
 			firstname: "Safidy Herinirina Arindranto",
 			lastname: "Andriantsoa",
 			faculty: "IGGLIA3",
-			age: 20
+			age: 20,
+			tel: "0342149563",
+			email: "harimalalamendrika@gmail.com"
 		},
 		educationInfo:{
 			university: {
@@ -30,7 +32,12 @@ let memberList= [
 			modelization: ["Merise"],
 			bd: ["MySQL"],
 			officeAutomation: ["Word","PowerPoint","Excel"]
-		}
+		},
+		experienceInfo: [
+			"- Book-y : web application to manage a library",
+			"- InterMall : mobile application for online sales",
+			"- MadArt : website that shows the beauty of Madagascar"
+		]
 	},
 	{
 		assets: {
@@ -41,7 +48,9 @@ let memberList= [
 			firstname: "Mendrika Henintsoa",
 			lastname: "Harimalala",
 			faculty: "IGGLIA3",
-			age: 20
+			age: 20,
+			tel: "0342149563",
+			email: "harimalalamendrika@gmail.com"
 		},
 		educationInfo:{
 			university: {
@@ -61,7 +70,12 @@ let memberList= [
 			modelization: ["Merise"],
 			bd: ["MySQL"],
 			officeAutomation: ["Word","PowerPoint","Excel"]
-		}
+		},
+		experienceInfo: [
+			"- Book-y : web application to manage a library",
+			"- InterMall : mobile application for online sales",
+			"- MadArt : website that shows the beauty of Madagascar"
+		]
 	},
 	{
 		assets: {
@@ -72,7 +86,9 @@ let memberList= [
 			firstname: "Aina Sariaka",
 			lastname: "Andriamanana",
 			faculty: "IGGLIA3",
-			age: 20
+			age: 20,
+			tel: "0342149563",
+			email: "harimalalamendrika@gmail.com"
 		},
 		educationInfo:{
 			university: {
@@ -92,7 +108,12 @@ let memberList= [
 			modelization: ["Merise"],
 			bd: ["MySQL"],
 			officeAutomation: ["Word","PowerPoint","Excel"]
-		}
+		},
+		experienceInfo: [
+			"- Book-y : web application to manage a library",
+			"- InterMall : mobile application for online sales",
+			"- MadArt : website that shows the beauty of Madagascar"
+		]
 	},
 	{
 		assets: {
@@ -103,7 +124,9 @@ let memberList= [
 			firstname: "Fanirintsoa Mathieu",
 			lastname: "Andrianandraina",
 			faculty: "ISAIA3",
-			age: 21
+			age: 21,
+			tel: "0347236379",
+			email: "fanirintsoaandrianandraina@gmail.com"
 		},
 		educationInfo:{
 			university: {
@@ -118,12 +141,18 @@ let memberList= [
 			},
 		},
 		skillsInfo:{
-			framework: ["Symfony","ANGULAR","BOOTSTRAP","Flutter"],
+			framework: ["NodeJs","ReactJs","BOOTSTRAP","Flutter"],
 			programmation: ["HTML","CSS","JavaScript","Java","C","PHP","Pascal"],
 			modelization: ["Merise"],
 			bd: ["MySQL"],
 			officeAutomation: ["Word","PowerPoint","Excel"]
-		}
+		},
+		experienceInfo: [
+			"- Book-e: Book management web application",
+			"- RestoMS: Restaurant management web application",
+			"- Secooly: Student management web application",
+			"- Lyrics Mathieu Mobile application containing music lyrics"
+		]
 	},
 	{
 		assets: {
@@ -134,7 +163,9 @@ let memberList= [
 			firstname: "Tsiory Herinjato",
 			lastname: "Andriamahefa",
 			faculty: "ISAIA3",
-			age: 21
+			age: 21,
+			tel: "0342149563",
+			email: "harimalalamendrika@gmail.com"
 		},
 		educationInfo:{
 			university: {
@@ -154,7 +185,12 @@ let memberList= [
 			modelization: ["Merise"],
 			bd: ["MySQL"],
 			officeAutomation: ["Word","PowerPoint","Excel"]
-		}
+		},
+		experienceInfo: [
+			"- Book-y : web application to manage a library",
+			"- InterMall : mobile application for online sales",
+			"- MadArt : website that shows the beauty of Madagascar"
+		]
 	},
 ];
 
