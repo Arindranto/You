@@ -13,17 +13,23 @@ let memberList= [
 			age: 20
 		},
 		educationInfo:{
-			universitySchool: "Institut Supérieur Polytechnique de Madagascar",
-			collegeSchool: "Jules Ferry",
-			universityDiploma: "Troisième année en Informatique",
-			collegeDiploma: "BACC série D mention Assez Bien"
+			university: {
+				school: "Institut Supérieur Polytechnique de Madagascar",
+				grade: "3m annee",
+				duration: "2019 until now"
+			},
+			college: {
+				school: "Lycée Privée Catholique Notre Dame de Fatima",
+				grade: "BACC D",
+				duration: "2012 ~ 2019"
+			},
 		},
 		skillsInfo:{
-			framework: "Symfony ANGULAR BOOTSTRAP Flutter",
-			programmation: "HTML CSS JavaScript Java C PHP Pascal",
-			modelization: "Merise",
-			bd: "MySQL",
-			officeAutomation: "Word PowerPoint Excel"
+			framework: ["Symfony","ANGULAR","BOOTSTRAP","Flutter"],
+			programmation: ["HTML","CSS","JavaScript","Java","C","PHP","Pascal"],
+			modelization: ["Merise"],
+			bd: ["MySQL"],
+			officeAutomation: ["Word","PowerPoint","Excel"]
 		}
 	},
 	{
@@ -38,17 +44,23 @@ let memberList= [
 			age: 20
 		},
 		educationInfo:{
-			universitySchool: "Institut Supérieur Polytechnique de Madagascar",
-			collegeSchool: "Lycée Privée Catholique Notre Dame de Fatima",
-			universityDiploma: "Troisième année en Informatique",
-			collegeDiploma: "BACC série D mention Assez Bien"
+			university: {
+				school: "Institut Supérieur Polytechnique de Madagascar",
+				grade: "3m annee",
+				duration: "2019 until now"
+			},
+			college: {
+				school: "Lycée Privée Catholique Notre Dame de Fatima",
+				grade: "BACC D",
+				duration: "2012 ~ 2019"
+			},
 		},
 		skillsInfo:{
-			framework: "Symfony ANGULAR BOOTSTRAP",
-			programmation: "HTML CSS JavaScript Java C PHP Pascal",
-			modelization: "Merise",
-			bd: "MySQL",
-			officeAutomation: "Word PowerPoint Excel"
+			framework: ["Symfony","ANGULAR","BOOTSTRAP","Flutter"],
+			programmation: ["HTML","CSS","JavaScript","Java","C","PHP","Pascal"],
+			modelization: ["Merise"],
+			bd: ["MySQL"],
+			officeAutomation: ["Word","PowerPoint","Excel"]
 		}
 	},
 	{
@@ -63,17 +75,23 @@ let memberList= [
 			age: 20
 		},
 		educationInfo:{
-			universitySchool: "Institut Supérieur Polytechnique de Madagascar",
-			collegeSchool: "Lycée Saint Francois Xavier",
-			universityDiploma: "Troisième année en Informatique",
-			collegeDiploma: "BACC série D mention Assez Bien"
+			university: {
+				school: "Institut Supérieur Polytechnique de Madagascar",
+				grade: "3m annee",
+				duration: "2019 until now"
+			},
+			college: {
+				school: "Lycée Privée Catholique Notre Dame de Fatima",
+				grade: "BACC D",
+				duration: "2012 ~ 2019"
+			},
 		},
 		skillsInfo:{
-			framework: "Symfony ANGULAR BOOTSTRAP Flutter",
-			programmation: "HTML CSS JavaScript Java C PHP Pascal",
-			modelization: "Merise",
-			bd: "MySQL",
-			officeAutomation: "Word PowerPoint Excel"
+			framework: ["Symfony","ANGULAR","BOOTSTRAP","Flutter"],
+			programmation: ["HTML","CSS","JavaScript","Java","C","PHP","Pascal"],
+			modelization: ["Merise"],
+			bd: ["MySQL"],
+			officeAutomation: ["Word","PowerPoint","Excel"]
 		}
 	},
 	{
@@ -88,17 +106,23 @@ let memberList= [
 			age: 21
 		},
 		educationInfo:{
-			universitySchool: "Institut Supérieur Polytechnique de Madagascar",
-			collegeSchool: "Lycée Privée Catholique Notre Dame de Fatima",
-			universityDiploma: "Troisième année en Informatique",
-			collegeDiploma: "BACC série D mention Assez Bien"
+			university: {
+				school: "Institut Supérieur Polytechnique de Madagascar",
+				grade: "3m annee",
+				duration: "2019 until now"
+			},
+			college: {
+				school: "Lycée Privée Catholique Notre Dame de Fatima",
+				grade: "BACC D",
+				duration: "2012 ~ 2019"
+			},
 		},
 		skillsInfo:{
-			framework: "Symfony ANGULAR BOOTSTRAP Flutter",
-			programmation: "HTML CSS JavaScript Java C PHP Pascal",
-			modelization: "Merise",
-			bd: "MySQL",
-			officeAutomation: "Word PowerPoint Excel"
+			framework: ["Symfony","ANGULAR","BOOTSTRAP","Flutter"],
+			programmation: ["HTML","CSS","JavaScript","Java","C","PHP","Pascal"],
+			modelization: ["Merise"],
+			bd: ["MySQL"],
+			officeAutomation: ["Word","PowerPoint","Excel"]
 		}
 	},
 	{
@@ -113,17 +137,23 @@ let memberList= [
 			age: 21
 		},
 		educationInfo:{
-			universitySchool: "Institut Supérieur Polytechnique de Madagascar",
-			collegeSchool: "Lycée ESSCA",
-			universityDiploma: "Troisième année en Informatique",
-			collegeDiploma: "BACC série D mention Assez Bien"
+			university: {
+				school: "Institut Supérieur Polytechnique de Madagascar",
+				grade: "3m annee",
+				duration: "2019 until now"
+			},
+			college: {
+				school: "Lycée Privée Catholique Notre Dame de Fatima",
+				grade: "BACC D",
+				duration: "2012 ~ 2019"
+			},
 		},
 		skillsInfo:{
-			framework: "Symfony ANGULAR BOOTSTRAP Flutter",
-			programmation: "HTML CSS JavaScript Java C PHP Pascal",
-			modelization: "Merise",
-			bd: "MySQL",
-			officeAutomation: "Word PowerPoint Excel"
+			framework: ["Symfony","ANGULAR","BOOTSTRAP","Flutter"],
+			programmation: ["HTML","CSS","JavaScript","Java","C","PHP","Pascal"],
+			modelization: ["Merise"],
+			bd: ["MySQL"],
+			officeAutomation: ["Word","PowerPoint","Excel"]
 		}
 	},
 ];

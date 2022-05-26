@@ -1,4 +1,4 @@
-<!-- ContactInfoSection  -->
+<!-- EducationSection-->
 <template>
 	<section>
 		<h3>EducationSection</h3>
@@ -52,4 +52,7 @@
 	.vue-green {
 		color: var(--vue-green);
 	}
+     
+
 </style>
+ 

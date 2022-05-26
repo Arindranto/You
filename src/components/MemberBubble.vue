@@ -26,7 +26,6 @@
 	img {
 		width: 60px;
 		height: 60px;
-		padding: 3px;
 		margin: 5px 0;
 		background: var(--dark-blue);
 		border-radius: 50%;
@@ -39,7 +38,7 @@
 	}
 
 	.back:hover img {
-		padding: 0;
+		padding: 2px;
 		box-shadow: 0 0 10px var(--vue-green);
 		transition: all .3s;
 		transition-timing-function: ease-in;

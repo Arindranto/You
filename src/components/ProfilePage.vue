@@ -18,7 +18,7 @@
 		
 			<SkillsSection class="grid-child" :skillsInfo= "skillsInfo"/>
 			
-			<EducationSection class="grid-child" :educationInfo= "educationInfo"/>
+			<ExperienceSection class="grid-child" :educationInfo= "educationInfo"/>
 		</div>
 	</div>
 </template>
@@ -38,7 +38,7 @@
 	import PersonalInfoSection from '@/components/PersonalInfoSection';
 	import EducationSection from '@/components/EducationSection';
 	import SkillsSection from '@/components/SkillsSection';
-	//import ExperienceSection from '@/components/ExperienceSection';
+	import ExperienceSection from '@/components/ExperienceSection';
 	import MemberList from '@/components/MemberList';
 	import memberList from '@/datas/members-data';
 
@@ -48,7 +48,7 @@
 			PersonalInfoSection,
 			EducationSection,
 			SkillsSection,
-			//ExperienceSection,
+			ExperienceSection,
 			MemberList
 		},
 		props: {
@@ -57,6 +57,7 @@
 				default: 0
 			}
 		},
+		
 		computed: {
 			// Because it's computed everytime
 			personalInfo() {
@@ -68,17 +69,19 @@
 					age: member.personalInfo.age,
 					description: member.assets.description,
 					faculty: member.personalInfo.faculty,
-				
+					photo: member.assets.photo
 				}
 				return me;
 			},
 			educationInfo() {
 				let member= memberList[this.id];
 				let me= {
-					universitySchool: member.educationInfo.universitySchool,
-					collegeSchool: member.educationInfo.collegeSchool,
-					universityDiploma: member.educationInfo.universityDiploma,
-					collegeDiploma: member.educationInfo.collegeDiploma
+					universitySchool: member.educationInfo.university.school,
+          universityGrade: member.educationInfo.university.grade,
+          universityDuration: member.educationInfo.university.duration,
+          collegeSchool: member.educationInfo.college.school,
+          collegeGrade: member.educationInfo.college.grade,
+          collegeDuration: member.educationInfo.college.duration,
 				}
 				return me;
 			},
@@ -165,6 +168,7 @@
 	}
 	/*Grid positionning */
 	.grid-child {
+		max-width: 700px;
 		border: var(--vue-green) solid 3px;
 		border-radius: 20px;
 		padding: 10px;
@@ -177,7 +181,7 @@
 		margin-top: 10px;
 		display: grid;
 		grid-gap: 20px;
-		grid-template-columns: repeat(1, minmax(270px, 1fr));
+		grid-template-columns: repeat(auto-fill, 600px);
 		
 	}
 
