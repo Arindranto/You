@@ -8,6 +8,8 @@
 			<span class= "vue-green">{{personalInfo.description}}</span>
 			<p>{{ personalInfo.age }} years old</p>
 			<p>{{personalInfo.faculty}}</p>
+      <p>{{personalInfo.email}}</p>
+      <p>{{personalInfo.tel}}</p>
 		</div>
 		
 	</section>
@@ -28,6 +30,8 @@
 					faculty: 'Info',
 					age: 18,
 					photo: 'logo.png',
+          tel: '0333333333',
+          email: 'test@gmail.com'
 				}
 			}
 		},

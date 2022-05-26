@@ -10,9 +10,6 @@
 </template>
 
 <script>
-  /* props:
-      * personalInfo: to get the information needed to be displayed such as firstname, lastname, etc...
-  */
   export default {
     props: {
       educationInfo: {

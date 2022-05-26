@@ -1,17 +1,23 @@
-<!-- A simple PersonalInfoSection test -->
+<!-- ExperienceInfoSection  -->
 <template>
 	<section>
-		<p>ExperienceSection</p>
-		
+		<h3>ExperienceSection</h3>
+		<div id= "#content">
+      <li v-for= "(exp, index) in experienceInfo.project" :key= "index">{{exp}}</li>
+		</div>
 	</section>
 </template>
 
 <script>
-	/* props:
-			* personalInfo: to get the information needed to be displayed such as firstname, lastname, etc... 
-	*/
 	export default {
-		
+		props: {
+      experienceInfo: {
+        required: true,
+        default: {
+          project:['']
+        }
+      }
+    },
 	}
 </script>
 

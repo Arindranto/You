@@ -14,7 +14,7 @@
 		<PersonalInfoSection :personalInfo= "personalInfo" />
 		<EducationSection :educationInfo= "educationInfo"/>
 		<SkillsSection :skillsInfo= "skillsInfo"/>
-		<ExperienceSection/>
+		<ExperienceSection :experienceInfo= "experienceInfo"/>
 	</div>
 </template>
 
@@ -63,7 +63,9 @@
 					age: member.personalInfo.age,
 					description: member.assets.description,
 					faculty: member.personalInfo.faculty,
-					photo: member.assets.photo
+					photo: member.assets.photo,
+          tel: member.personalInfo.tel,
+          email: member.personalInfo.email
 				}
 				return me;
 			},
@@ -87,6 +89,13 @@
 					modelization: member.skillsInfo.modelization,
 					bd: member.skillsInfo.bd,
 					officeAutomation: member.skillsInfo.officeAutomation
+				}
+				return me;
+			},
+      experienceInfo() {
+				let member= memberList[this.id];
+				let me= {
+					project: member.experienceInfo
 				}
 				return me;
 			},
