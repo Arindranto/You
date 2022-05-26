@@ -1,15 +1,11 @@
-<!-- A simple PersonalInfoSection test -->
+<!-- ContactInfoSection  -->
 <template>
 	<section>
-		<p>PersonalInfoSection</p>
-		<h1><span class= "vue-green">{{ personalInfo.firstname }}</span> {{ personalInfo.lastname.toUpperCase() }}</h1>
-		
+		<h3>EducationSection</h3>
 		<div id= "#content">
-			<span class= "vue-green">{{personalInfo.description}}</span>
-			<p>{{ personalInfo.age }} years old</p>
-			<p>{{personalInfo.faculty}}</p>
+			<li>2019 ~ 2022 : {{educationInfo.universityDiploma}}<br>{{educationInfo.universitySchool}}</li>
+			<li>2019 : {{educationInfo.collegeDiploma}}<br>{{educationInfo.collegeSchool}}</li>
 		</div>
-		
 	</section>
 </template>
 
@@ -19,15 +15,14 @@
 	*/
 	export default {
 		props: {
-			personalInfo: {
+			educationInfo: {
 				required: true,
 				default: {
-					firstname: 'Firstname',
-					lastname: 'Lastname',
-					description: 'Description',
-					faculty: 'Info',
-					age: 18,
-					photo: 'logo.png',
+					universitySchool: 'ISPM',
+					collegeSchool: 'NDF',
+					universityDiploma: 'L3',
+					collegeDiploma: 'BACC'
+					
 				}
 			}
 		},

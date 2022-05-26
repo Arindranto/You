@@ -9,8 +9,22 @@ let memberList= [
 		personalInfo: {
 			firstname: "Safidy Herinirina Arindranto",
 			lastname: "Andriantsoa",
+			faculty: "IGGLIA3",
 			age: 20
 		},
+		educationInfo:{
+			universitySchool: "Institut Supérieur Polytechnique de Madagascar",
+			collegeSchool: "Lycée Privée Catholique Notre Dame de Fatima",
+			universityDiploma: "Troisième année en Informatique",
+			collegeDiploma: "BACC série D mention Assez Bien"
+		},
+		skillsInfo:{
+			framework: "Symfony ANGULAR BOOTSTRAP Flutter",
+			programmation: "HTML CSS JavaScript Java C PHP Pascal",
+			modelization: "Merise",
+			bd: "MySQL",
+			officeAutomation: "Word PowerPoint Excel"
+		}
 	},
 	{
 		assets: {
@@ -20,8 +34,22 @@ let memberList= [
 		personalInfo: {
 			firstname: "Mendrika Henintsoa",
 			lastname: "Harimalala",
+			faculty: "IGGLIA3",
 			age: 20
 		},
+		educationInfo:{
+			universitySchool: "Institut Supérieur Polytechnique de Madagascar",
+			collegeSchool: "Lycée Privée Catholique Notre Dame de Fatima",
+			universityDiploma: "Troisième année en Informatique",
+			collegeDiploma: "BACC série D mention Assez Bien"
+		},
+		skillsInfo:{
+			framework: "Symfony ANGULAR BOOTSTRAP",
+			programmation: "HTML CSS JavaScript Java C PHP Pascal",
+			modelization: "Merise",
+			bd: "MySQL",
+			officeAutomation: "Word PowerPoint Excel"
+		}
 	},
 	{
 		assets: {
@@ -31,8 +59,22 @@ let memberList= [
 		personalInfo: {
 			firstname: "Aina Sariaka",
 			lastname: "Andriamanana",
+			faculty: "IGGLIA3",
 			age: 20
 		},
+		educationInfo:{
+			universitySchool: "Institut Supérieur Polytechnique de Madagascar",
+			collegeSchool: "Lycée Privée Catholique Notre Dame de Fatima",
+			universityDiploma: "Troisième année en Informatique",
+			collegeDiploma: "BACC série D mention Assez Bien"
+		},
+		skillsInfo:{
+			framework: "Symfony ANGULAR BOOTSTRAP Flutter",
+			programmation: "HTML CSS JavaScript Java C PHP Pascal",
+			modelization: "Merise",
+			bd: "MySQL",
+			officeAutomation: "Word PowerPoint Excel"
+		}
 	},
 	{
 		assets: {
@@ -42,8 +84,22 @@ let memberList= [
 		personalInfo: {
 			firstname: "Fanirintsoa Mathieu",
 			lastname: "Andrianandraina",
+			faculty: "ISAIA3",
 			age: 21
 		},
+		educationInfo:{
+			universitySchool: "Institut Supérieur Polytechnique de Madagascar",
+			collegeSchool: "Lycée Privée Catholique Notre Dame de Fatima",
+			universityDiploma: "Troisième année en Informatique",
+			collegeDiploma: "BACC série D mention Assez Bien"
+		},
+		skillsInfo:{
+			framework: "Symfony ANGULAR BOOTSTRAP Flutter",
+			programmation: "HTML CSS JavaScript Java C PHP Pascal",
+			modelization: "Merise",
+			bd: "MySQL",
+			officeAutomation: "Word PowerPoint Excel"
+		}
 	},
 	{
 		assets: {
@@ -53,8 +109,22 @@ let memberList= [
 		personalInfo: {
 			firstname: "Tsiory Herinjato",
 			lastname: "Andriamahefa",
+			faculty: "ISAIA3",
 			age: 21
 		},
+		educationInfo:{
+			universitySchool: "Institut Supérieur Polytechnique de Madagascar",
+			collegeSchool: "Lycée Privée Catholique Notre Dame de Fatima",
+			universityDiploma: "Troisième année en Informatique",
+			collegeDiploma: "BACC série D mention Assez Bien"
+		},
+		skillsInfo:{
+			framework: "Symfony ANGULAR BOOTSTRAP Flutter",
+			programmation: "HTML CSS JavaScript Java C PHP Pascal",
+			modelization: "Merise",
+			bd: "MySQL",
+			officeAutomation: "Word PowerPoint Excel"
+		}
 	},
 ];
 
