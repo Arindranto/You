@@ -12,6 +12,9 @@
 
 		<!-- SECTIONS GO HERE -->
 		<PersonalInfoSection :personalInfo= "personalInfo" />
+		<EducationSection :educationInfo= "educationInfo"/>
+		<SkillsSection />
+		<ExperienceSection/>
 	</div>
 </template>
 
@@ -20,7 +23,7 @@
 		components:
 			* PersonalInfoSection
 			* EducationSection
-			* SkillSection
+			* SkillsSection
 			* ExperienceSection
 		props:
 			* id: to get the concerned member from the memberList in members-data.js
@@ -28,13 +31,19 @@
 			* personalInfo: an object with the informations from memberList to pass to the PersonalInfoSection
 	*/
 	import PersonalInfoSection from '@/components/PersonalInfoSection';
-	import MemberList from '@/components/MemberList'
+	import EducationSection from '@/components/EducationSection';
+	import SkillsSection from '@/components/SkillsSection';
+	import ExperienceSection from '@/components/ExperienceSection';
+	import MemberList from '@/components/MemberList';
 	import memberList from '@/datas/members-data';
 
 	export default {
 		name: 'ProfilePage',
 		components: {
 			PersonalInfoSection,
+			EducationSection,
+			SkillsSection,
+			ExperienceSection,
 			MemberList
 		},
 		props: {
@@ -53,10 +62,34 @@
 					lastname: member.personalInfo.lastname,
 					age: member.personalInfo.age,
 					description: member.assets.description,
+					faculty: member.personalInfo.faculty,
 					photo: member.assets.photo
 				}
 				return me;
-			}
+			},
+			educationInfo() {
+				let member= memberList[this.id];
+				let me= {
+					universitySchool: member.educationInfo.university.school,
+          universityGrade: member.educationInfo.university.grade,
+          universityDuration: member.educationInfo.university.duration,
+          collegeSchool: member.educationInfo.college.school,
+          collegeGrade: member.educationInfo.college.grade,
+          collegeDuration: member.educationInfo.college.duration,
+				}
+				return me;
+			},
+			/*skillsInfo() {
+				let member= memberList[this.id];
+				let me= {
+					framework: member.skillsInfo.framework,
+					programmation: member.skillsInfo.programmation,
+					modelization: member.skillsInfo.modelization,
+					bd: member.skillsInfo.bd,
+					officeAutomation: member.skillsInfo.officeAutomation
+				}
+				return me;
+			},*/
 		},
 		methods: {
 			passToApp(id) {
@@ -68,11 +101,12 @@
 
 <style scoped>
 	/* To be changed */
-	@import '@/assets/style/style-data'
+	@import '@/assets/style/style-data';
 
 	* {
 		color: #ffffff;
 	}
+	
 	#container {
 		position: absolute;
 		height: 100%;

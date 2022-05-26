@@ -9,8 +9,28 @@ let memberList= [
 		personalInfo: {
 			firstname: "Safidy Herinirina Arindranto",
 			lastname: "Andriantsoa",
+			faculty: "IGGLIA3",
 			age: 20
 		},
+		educationInfo:{
+			university: {
+				school: "Institut Supérieur Polytechnique de Madagascar",
+				grade: "3m annee",
+				duration: "2019 until now"
+			},
+			college: {
+				school: "Lycée Privée Catholique Notre Dame de Fatima",
+				grade: "BACC D",
+				duration: "2012 ~ 2019"
+			},
+		},
+		/*skillsInfo:{
+			framework: ["Symfony","ANGULAR","BOOTSTRAP","Flutter"],
+			programmation: ["HTML","CSS","JavaScript","Java","C","PHP","Pascal"],
+			modelization: ["Merise"],
+			bd: ["MySQL"],
+			officeAutomation: ["Word","PowerPoint","Excel"]
+		}**/
 	},
 	{
 		assets: {
@@ -20,8 +40,28 @@ let memberList= [
 		personalInfo: {
 			firstname: "Mendrika Henintsoa",
 			lastname: "Harimalala",
+			faculty: "IGGLIA3",
 			age: 20
 		},
+		educationInfo:{
+			university: {
+				school: "Institut Supérieur Polytechnique de Madagascar",
+				grade: "3m annee",
+				duration: "2019 until now"
+			},
+			college: {
+				school: "Lycée Privée Catholique Notre Dame de Fatima",
+				grade: "BACC D",
+				duration: "2012 ~ 2019"
+			},
+		},
+		/*skillsInfo:{
+			framework: ["Symfony","ANGULAR","BOOTSTRAP","Flutter"],
+			programmation: ["HTML","CSS","JavaScript","Java","C","PHP","Pascal"],
+			modelization: ["Merise"],
+			bd: ["MySQL"],
+			officeAutomation: ["Word","PowerPoint","Excel"]
+		}*/
 	},
 	{
 		assets: {
@@ -31,8 +71,28 @@ let memberList= [
 		personalInfo: {
 			firstname: "Aina Sariaka",
 			lastname: "Andriamanana",
+			faculty: "IGGLIA3",
 			age: 20
 		},
+		educationInfo:{
+			university: {
+				school: "Institut Supérieur Polytechnique de Madagascar",
+				grade: "3m annee",
+				duration: "2019 until now"
+			},
+			college: {
+				school: "Lycée Privée Catholique Notre Dame de Fatima",
+				grade: "BACC D",
+				duration: "2012 ~ 2019"
+			},
+		},
+		/*skillsInfo:{
+			framework: ["Symfony","ANGULAR","BOOTSTRAP","Flutter"],
+			programmation: ["HTML","CSS","JavaScript","Java","C","PHP","Pascal"],
+			modelization: ["Merise"],
+			bd: ["MySQL"],
+			officeAutomation: ["Word","PowerPoint","Excel"]
+		}*/
 	},
 	{
 		assets: {
@@ -42,8 +102,28 @@ let memberList= [
 		personalInfo: {
 			firstname: "Fanirintsoa Mathieu",
 			lastname: "Andrianandraina",
+			faculty: "ISAIA3",
 			age: 21
 		},
+		educationInfo:{
+			university: {
+				school: "Institut Supérieur Polytechnique de Madagascar",
+				grade: "3m annee",
+				duration: "2019 until now"
+			},
+			college: {
+				school: "Lycée Privée Catholique Notre Dame de Fatima",
+				grade: "BACC D",
+				duration: "2012 ~ 2019"
+			},
+		},
+		/*skillsInfo:{
+			framework: ["Symfony","ANGULAR","BOOTSTRAP","Flutter"],
+			programmation: ["HTML","CSS","JavaScript","Java","C","PHP","Pascal"],
+			modelization: ["Merise"],
+			bd: ["MySQL"],
+			officeAutomation: ["Word","PowerPoint","Excel"]
+		}*/
 	},
 	{
 		assets: {
@@ -53,8 +133,28 @@ let memberList= [
 		personalInfo: {
 			firstname: "Tsiory Herinjato",
 			lastname: "Andriamahefa",
+			faculty: "ISAIA3",
 			age: 21
 		},
+		educationInfo:{
+			university: {
+				school: "Institut Supérieur Polytechnique de Madagascar",
+				grade: "3m annee",
+				duration: "2019 until now"
+			},
+			college: {
+				school: "Lycée Privée Catholique Notre Dame de Fatima",
+				grade: "BACC D",
+				duration: "2012 ~ 2019"
+			},
+		},
+		/*skillsInfo:{
+			framework: ["Symfony","ANGULAR","BOOTSTRAP","Flutter"],
+			programmation: ["HTML","CSS","JavaScript","Java","C","PHP","Pascal"],
+			modelization: ["Merise"],
+			bd: ["MySQL"],
+			officeAutomation: ["Word","PowerPoint","Excel"]
+		}*/
 	},
 ];
 
