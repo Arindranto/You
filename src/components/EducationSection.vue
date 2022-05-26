@@ -1,10 +1,10 @@
-<!-- EducationSection  -->
+<!-- EducationSection-->
 <template>
 	<section>
 		<h3>EducationSection</h3>
 		<div id= "#content">
-      <!--<li>{{educationInfo.university.duration}}:{{educationInfo.university.grade}}<br>{{educationInfo.university.school}}</li>-->
-      <!--<li>{{educationInfo.college.duration}}:{{educationInfo.college.grade}}<br>{{educationInfo.college.school}}</li>-->
+      <li>{{educationInfo.universityDuration}}:{{educationInfo.universityGrade}}<br>{{educationInfo.universitySchool}}</li>
+      <li>{{educationInfo.collegeDuration}}:{{educationInfo.collegeGrade}}<br>{{educationInfo.collegeSchool}}</li>
     </div>
   </section>
 </template>

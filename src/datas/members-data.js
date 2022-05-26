@@ -24,13 +24,13 @@ let memberList= [
 				duration: "2012 ~ 2019"
 			},
 		},
-		/*skillsInfo:{
+		skillsInfo:{
 			framework: ["Symfony","ANGULAR","BOOTSTRAP","Flutter"],
 			programmation: ["HTML","CSS","JavaScript","Java","C","PHP","Pascal"],
 			modelization: ["Merise"],
 			bd: ["MySQL"],
 			officeAutomation: ["Word","PowerPoint","Excel"]
-		}**/
+		}
 	},
 	{
 		assets: {
@@ -55,13 +55,13 @@ let memberList= [
 				duration: "2012 ~ 2019"
 			},
 		},
-		/*skillsInfo:{
+		skillsInfo:{
 			framework: ["Symfony","ANGULAR","BOOTSTRAP","Flutter"],
 			programmation: ["HTML","CSS","JavaScript","Java","C","PHP","Pascal"],
 			modelization: ["Merise"],
 			bd: ["MySQL"],
 			officeAutomation: ["Word","PowerPoint","Excel"]
-		}*/
+		}
 	},
 	{
 		assets: {
@@ -86,13 +86,13 @@ let memberList= [
 				duration: "2012 ~ 2019"
 			},
 		},
-		/*skillsInfo:{
+		skillsInfo:{
 			framework: ["Symfony","ANGULAR","BOOTSTRAP","Flutter"],
 			programmation: ["HTML","CSS","JavaScript","Java","C","PHP","Pascal"],
 			modelization: ["Merise"],
 			bd: ["MySQL"],
 			officeAutomation: ["Word","PowerPoint","Excel"]
-		}*/
+		}
 	},
 	{
 		assets: {
@@ -117,13 +117,13 @@ let memberList= [
 				duration: "2012 ~ 2019"
 			},
 		},
-		/*skillsInfo:{
+		skillsInfo:{
 			framework: ["Symfony","ANGULAR","BOOTSTRAP","Flutter"],
 			programmation: ["HTML","CSS","JavaScript","Java","C","PHP","Pascal"],
 			modelization: ["Merise"],
 			bd: ["MySQL"],
 			officeAutomation: ["Word","PowerPoint","Excel"]
-		}*/
+		}
 	},
 	{
 		assets: {
@@ -148,13 +148,13 @@ let memberList= [
 				duration: "2012 ~ 2019"
 			},
 		},
-		/*skillsInfo:{
+		skillsInfo:{
 			framework: ["Symfony","ANGULAR","BOOTSTRAP","Flutter"],
 			programmation: ["HTML","CSS","JavaScript","Java","C","PHP","Pascal"],
 			modelization: ["Merise"],
 			bd: ["MySQL"],
 			officeAutomation: ["Word","PowerPoint","Excel"]
-		}*/
+		}
 	},
 ];
 

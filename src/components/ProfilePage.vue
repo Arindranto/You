@@ -13,7 +13,7 @@
 		<!-- SECTIONS GO HERE -->
 		<PersonalInfoSection :personalInfo= "personalInfo" />
 		<EducationSection :educationInfo= "educationInfo"/>
-		<SkillsSection />
+		<SkillsSection :skillsInfo= "skillsInfo"/>
 		<ExperienceSection/>
 	</div>
 </template>
@@ -79,7 +79,7 @@
 				}
 				return me;
 			},
-			/*skillsInfo() {
+			skillsInfo() {
 				let member= memberList[this.id];
 				let me= {
 					framework: member.skillsInfo.framework,
@@ -89,7 +89,7 @@
 					officeAutomation: member.skillsInfo.officeAutomation
 				}
 				return me;
-			},*/
+			},
 		},
 		methods: {
 			passToApp(id) {
