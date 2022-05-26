@@ -3,11 +3,7 @@
 	<section>
 		<h3>Education :</h3>
 		<div id= "#content">
-			<li>2019 ~ 2022 : {{educationInfo.universityDiploma}}<br>{{educationInfo.universitySchool}}</li>
-			<br>
-			<li>2019 : {{educationInfo.collegeDiploma}}<br>{{educationInfo.collegeSchool}}</li>
-			
-			
+      <li v-for= "(school, index) in educationInfo.school" :key= "index">- {{school}}</li>
 		</div>
 	</section>
 	
@@ -19,12 +15,7 @@
       educationInfo: {
         required: true,
         default: {
-          universitySchool: 'School',
-          universityGrade: 'Grade',
-          universityDuration: 'Duration',
-          collegeSchool: 'School',
-          collegeGrade: 'Grade',
-          collegeDuration: 'Duration'
+          school: ['']
 
         }
       }

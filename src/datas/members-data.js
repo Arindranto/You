@@ -14,18 +14,9 @@ let memberList= [
 			tel: "0342149563",
 			email: "harimalalamendrika@gmail.com"
 		},
-		educationInfo:{
-			university: {
-				school: "Institut Supérieur Polytechnique de Madagascar",
-				grade: "3m annee",
-				duration: "2019 until now"
-			},
-			college: {
-				school: "Lycée Privée Catholique Notre Dame de Fatima",
-				grade: "BACC D",
-				duration: "2012 ~ 2019"
-			},
-		},
+		educationInfo:[
+			"2019 ~ 2020 : Institut Supérieur Polytechnique de Madagascar"
+		],
 		skillsInfo:{
 			framework: ["Symfony","ANGULAR","BOOTSTRAP","Flutter"],
 			programmation: ["HTML","CSS","JavaScript","Java","C","PHP","Pascal"],
@@ -52,18 +43,10 @@ let memberList= [
 			tel: "0342149563",
 			email: "harimalalamendrika@gmail.com"
 		},
-		educationInfo:{
-			university: {
-				school: "Institut Supérieur Polytechnique de Madagascar",
-				grade: "3m annee",
-				duration: "2019 until now"
-			},
-			college: {
-				school: "Lycée Privée Catholique Notre Dame de Fatima",
-				grade: "BACC D",
-				duration: "2012 ~ 2019"
-			},
-		},
+		educationInfo:[
+			"2019 ~ 2020 : Institut Supérieur Polytechnique de Madagascar",
+			"2012 ~ 2019 : Lycée Privée Catholique Notre Dame de Fatima"
+		],
 		skillsInfo:{
 			framework: ["Symfony","ANGULAR","BOOTSTRAP","Flutter"],
 			programmation: ["HTML","CSS","JavaScript","Java","C","PHP","Pascal"],
@@ -87,30 +70,22 @@ let memberList= [
 			lastname: "Andriamanana",
 			faculty: "IGGLIA3",
 			age: 20,
-			tel: "0342149563",
-			email: "harimalalamendrika@gmail.com"
+			tel: "0340815757",
+			email: "andriamananaaina13a@gmail.com"
 		},
-		educationInfo:{
-			university: {
-				school: "Institut Supérieur Polytechnique de Madagascar",
-				grade: "3m annee",
-				duration: "2019 until now"
-			},
-			college: {
-				school: "Lycée Privée Catholique Notre Dame de Fatima",
-				grade: "BACC D",
-				duration: "2012 ~ 2019"
-			},
-		},
+		educationInfo:[
+			"2019 ~ 2020 : Institut Supérieur Polytechnique de Madagascar",
+			"2012 ~ 2019 : Lycée Saint Francois Xavier Antanimena"
+		],
 		skillsInfo:{
-			framework: ["Symfony","ANGULAR","BOOTSTRAP","Flutter"],
-			programmation: ["HTML","CSS","JavaScript","Java","C","PHP","Pascal"],
+			framework: ["Flutter"],
+			programmation: ["HTML","CSS","JavaScript","C","PHP","Pascal"],
 			modelization: ["Merise"],
-			bd: ["MySQL"],
+			bd: ["SQlite3"],
 			officeAutomation: ["Word","PowerPoint","Excel"]
 		},
 		experienceInfo: [
-			"- Book-y : web application to manage a library",
+			"- Malagasy Mitsabo : patient management software",
 			"- InterMall : mobile application for online sales",
 			"- MadArt : website that shows the beauty of Madagascar"
 		]
@@ -128,18 +103,10 @@ let memberList= [
 			tel: "0347236379",
 			email: "fanirintsoaandrianandraina@gmail.com"
 		},
-		educationInfo:{
-			university: {
-				school: "Institut Supérieur Polytechnique de Madagascar",
-				grade: "3m annee",
-				duration: "2019 until now"
-			},
-			college: {
-				school: "Lycée Privée Catholique Notre Dame de Fatima",
-				grade: "BACC D",
-				duration: "2012 ~ 2019"
-			},
-		},
+		educationInfo:[
+			"2019 ~ 2020 : Institut Supérieur Polytechnique de Madagascar",
+			"2005 ~ 2019 : Lycée Privée Catholique Notre Dame de Fatima"
+		],
 		skillsInfo:{
 			framework: ["NodeJs","ReactJs","BOOTSTRAP","Flutter"],
 			programmation: ["HTML","CSS","JavaScript","Java","C","PHP","Pascal"],
@@ -167,18 +134,10 @@ let memberList= [
 			tel: "0342149563",
 			email: "harimalalamendrika@gmail.com"
 		},
-		educationInfo:{
-			university: {
-				school: "Institut Supérieur Polytechnique de Madagascar",
-				grade: "3m annee",
-				duration: "2019 until now"
-			},
-			college: {
-				school: "Lycée Privée Catholique Notre Dame de Fatima",
-				grade: "BACC D",
-				duration: "2012 ~ 2019"
-			},
-		},
+		educationInfo:[
+			"2019 ~ 2020 : Institut Supérieur Polytechnique de Madagascar",
+			"2005 ~ 2019 : Lycée Privée Catholique Notre Dame de Fatima"
+		],
 		skillsInfo:{
 			framework: ["Symfony","ANGULAR","BOOTSTRAP","Flutter"],
 			programmation: ["HTML","CSS","JavaScript","Java","C","PHP","Pascal"],

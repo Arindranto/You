@@ -79,12 +79,7 @@
 			educationInfo() {
 				let member= memberList[this.id];
 				let me= {
-					universitySchool: member.educationInfo.university.school,
-          universityGrade: member.educationInfo.university.grade,
-          universityDuration: member.educationInfo.university.duration,
-          collegeSchool: member.educationInfo.college.school,
-          collegeGrade: member.educationInfo.college.grade,
-          collegeDuration: member.educationInfo.college.duration,
+					school: member.educationInfo,
 				}
 				return me;
 			},
