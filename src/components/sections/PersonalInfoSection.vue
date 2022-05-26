@@ -2,19 +2,19 @@
 <template>
 	<section>
 		<div class="child">
-			<img :src="require(`@/assets/img/${this.personalInfo.photo}`)" alt="tsy miseho" srcset="">
+			<img :src="img" alt="unfound" srcset="">
 		</div>
 		<div class="child">
-			<h1><span class= "vue-green">{{ personalInfo.firstname }}</span> {{ personalInfo.lastname.toUpperCase() }}</h1>
+			<h1><span class= "vue-green">{{ personalInfo.firstname }}</span><br/>{{ personalInfo.lastname.toUpperCase() }}</h1>
 			
-			<div id= "#content">
+			<!-- <div class= "content"> -->
 				<span class= "vue-green">{{personalInfo.description}}</span>
 				<br><br>
 				<p>{{ personalInfo.age }} years old</p>
 				<p>{{personalInfo.faculty}}</p>
 				<p>{{personalInfo.email}}</p>
 				<p>{{personalInfo.tel}}</p>
-			</div>
+			<!-- </div> -->
 		</div>
 		
 	</section>
@@ -40,6 +40,12 @@
 				}
 			}
 		},
+		computed: {
+			img() {
+				// Return the image thing
+				return require(`@/assets/img/${this.personalInfo.photo}`);
+			}
+		}
 
 	
 	}
@@ -49,24 +55,26 @@
 	@import '@/assets/style/style-data';
 
 	section {
+		position: relative;
 		font-family: var(--title-font);
 		color: #ffffff;
 		display: grid;
-		grid-gap: 20px;
-		grid-template-columns: repeat(auto-fill, 250px);
-		
+		align-items: center;
+		grid-column-gap: 20px;
+		grid-template-columns: 200px 100%;
 	}	
 
-	#content {
+	.content {
 		/* Container */
+		position: absolute;
 		border: solid 2px #ffffff;
-		padding: 25px;
 		border-radius: 10px;
 		color: #ffffff;
 	}
 
 	img{
 		width: 200px;
+		height: 225px;
 		padding: 0;
 		background-color: var(--dark-blue);
 		border-radius: 30px;

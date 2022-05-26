@@ -12,7 +12,7 @@
   <div v-else id= "list">
     <!-- PROFILE PAGE WITH A SELECTED ID -->
     <!-- The active one will be the one with the correct id -->
-    <MemberBubble :class='{active: index === selected}'  v-for= "(member, index) in members" :key= "index" :id= "`card-${index}`" :src= "member.photo" @passToMemberList= "passToProfilePage(index)" />  <!-- pass with the index as an id to the ProfilePage -->
+    <MemberBubble :class='{active: index === selected}'  v-for= "(member, index) in members" :key= "index" :src= "member.photo" @passToMemberList= "passToProfilePage(index)" />  <!-- pass with the index as an id to the ProfilePage -->
   </div>
 </template>
 

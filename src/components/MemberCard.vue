@@ -145,6 +145,7 @@
   .description {
     /* the description text */
     top: 83%;
+    width: 220px;
     font-weight: bold;
   }
   .hovered {

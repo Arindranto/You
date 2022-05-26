@@ -36,10 +36,10 @@
 		data:
 			* personalInfo: an object with the informations from memberList to pass to the PersonalInfoSection
 	*/
-	import PersonalInfoSection from '@/components/Section/PersonalInfoSection';
-	import EducationSection from '@/components/Section/EducationSection';
-	import SkillsSection from '@/components/Section/SkillsSection';
-	import ExperienceSection from '@/components/Section/ExperienceSection';
+	import PersonalInfoSection from '@/components/sections/PersonalInfoSection';
+	import EducationSection from '@/components/sections/EducationSection';
+	import SkillsSection from '@/components/sections/SkillsSection';
+	import ExperienceSection from '@/components/sections/ExperienceSection';
 	import MemberList from '@/components/MemberList';
 	import memberList from '@/datas/members-data';
 
@@ -65,46 +65,25 @@
 				let member= memberList[this.id];	// Get the member data as an object
 				
 				let me= {
-					firstname: member.personalInfo.firstname,
-					lastname: member.personalInfo.lastname,
-					age: member.personalInfo.age,
-					description: member.assets.description,
-					faculty: member.personalInfo.faculty,
-					photo: member.assets.photo,
-          tel: member.personalInfo.tel,
-          email: member.personalInfo.email
-				}
+						firstname: member.personalInfo.firstname,
+						lastname: member.personalInfo.lastname,
+						age: member.personalInfo.age,
+						description: member.assets.description,
+						faculty: member.personalInfo.faculty,
+						photo: member.assets.photo,
+						tel: member.personalInfo.tel,
+						email: member.personalInfo.email
+					}
 				return me;
 			},
 			educationInfo() {
-				let member= memberList[this.id];
-				let me= {
-					universitySchool: member.educationInfo.university.school,
-          universityGrade: member.educationInfo.university.grade,
-          universityDuration: member.educationInfo.university.duration,
-          collegeSchool: member.educationInfo.college.school,
-          collegeGrade: member.educationInfo.college.grade,
-          collegeDuration: member.educationInfo.college.duration,
-				}
-				return me;
+				return memberList[this.id].educationInfo;
 			},
 			skillsInfo() {
-				let member= memberList[this.id];
-				let me= {
-					framework: member.skillsInfo.framework,
-					programmation: member.skillsInfo.programmation,
-					modelization: member.skillsInfo.modelization,
-					bd: member.skillsInfo.bd,
-					officeAutomation: member.skillsInfo.officeAutomation
-				}
-				return me;
+				return memberList[this.id].skillsInfo;
 			},
-      experienceInfo() {
-				let member= memberList[this.id];
-				let me= {
-					project: member.experienceInfo
-				}
-				return me;
+			experienceInfo() {
+				return memberList[this.id].experienceInfo;
 			},
 		},
 		methods: {
@@ -115,10 +94,15 @@
 	}
 </script>
 
-<style scoped>
+<style>
 	/* To be changed */
 	@import '@/assets/style/style-data';
 
+	h2 {
+		/* All section titles */
+		text-align: center;
+		text-shadow: 0 0 50px var(--vue-green);
+	}
 	* {
 		list-style: none;
 		color: #ffffff;
@@ -126,21 +110,22 @@
 
 	#container {
 		position: absolute;
-		height: 100%;
+		display: flex;
+		justify-content: center;
+		height: auto;
 		width: 100%;
-		padding-left: 110px;
-		padding-right: 110px;
+		/* To set an auto overflow */
+		min-width: 720px;
+		padding-left: 70px;	/* for the side bar */
+		/*padding-right: 110px;*/
 	}
 	#sidebar {
-		position: absolute;
-		text-align: center;
+		position: fixed;
 		left: 0;
 		background: var(--vue-blue);
 		width: 70px;
 		height: 100%;
 		padding-top: 20px;
-		position: fixed;
-		z-index: 1000;
 	}
 	.back-btn {
 		position: absolute;
@@ -168,20 +153,21 @@
 	}
 	.back-btn:hover {
 		border-color: var(--dark-blue);
-		transition: all .2s;
+		transition: all .1s;
 		transition-timing-function: ease-in;
 	}
 	.back-btn:hover #back-arrow{
 		border-left-color: var(--dark-blue);
 		border-bottom-color:  var(--dark-blue);
-		transition: all .2s;
+		transition: all .1s;
 		transition-timing-function: ease-in;
 	}
 	/*Grid positionning */
 	.grid {
+		padding: 25px;
+		width: 100%;
 		display: grid;
 		grid-gap: 10px;
-		grid-template-columns: repeat(1, 1fr);
 	}
 	.grid-child {
 		padding: 20px;
@@ -190,9 +176,9 @@
 		box-shadow: 0 0 5px var(--dark-green);
 	}
 	.grid-child:nth-child(1){
+		/* The personalInfo section */
+		/*position: sticky;
+		top: 0;*/
 		background-color: var(--vue-blue);
-		min-height: 280px;
 	}
-
-
 </style>

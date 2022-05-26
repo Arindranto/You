@@ -1,0 +1,86 @@
+<!-- SkillsInfoSection -->
+<template>
+	<section v-if= "skillsInfo !== undefined && Object.keys(skillsInfo).length">
+		<h2 class= "vue-green">SKILL{{Object.keys(skillsInfo).length === 1? "": "S"}}</h2>
+		<div id= "#content">
+			<!-- FRAMEWORKS -->
+      <ul v-if= "'framework' in skillsInfo">
+        <h4>Framework{{ skillsInfo.framework.length == 1? "": "s" }}</h4>
+        <li v-for= "(skill, index) in skillsInfo.framework" :key= "index">{{skill}}</li>
+      </ul>
+      <!-- PROGRAMING LANGAGES -->
+      <ul v-if= "'programmation' in skillsInfo">
+        <h4>Programing language{{ skillsInfo.programmation.length == 1? "": "s" }}</h4>
+        <li v-for= "(skill, index) in skillsInfo.programmation" :key= "index">{{skill}}</li>
+      </ul>
+      <!-- MODELIZATION -->
+      <ul v-if= "'modelization' in skillsInfo">
+				<h4>Modelization technique{{ skillsInfo.modelization.length == 1? "": "s" }}</h4>
+        <li v-for= "(skill, index) in skillsInfo.modelization" :key= "index">{{skill}}</li>
+      </ul>
+      <!-- DBS -->
+      <ul v-if= "'db' in skillsInfo">
+        <h4>Database{{ skillsInfo.db.length == 1? "": "s" }}</h4>
+        <li v-for= "(skill, index) in skillsInfo.db" :key= "index">{{skill}}</li>
+      </ul>
+      <!-- OFFICE AUTOMATION -->
+      <ul v-if= "'officeAutomation' in skillsInfo">
+        <h4>Office Automation Tool{{ skillsInfo.officeAutomation.length == 1? "": "s" }}</h4>
+        <li v-for= "(skill, index) in skillsInfo.officeAutomation" :key= "index">{{skill}}</li>
+      </ul>
+		</div>
+	</section>
+</template>
+
+<script>
+	export default {
+		props: {
+      skillsInfo: {
+        required: true,
+        default: {
+          framework: [''],
+					programmation: [''],
+					modelization: [''],
+					bd: [''],
+					officeAutomation: ['']
+
+        }
+      }
+    },
+	}
+</script>
+
+<style scoped>
+	@import '@/assets/style/style-data';
+	h3 {
+		color: var(--vue-green)
+	}
+	h4 {
+		/* Section title: University, etc */
+		margin-top: 15px;
+		border-bottom: solid 3px #ffffff ;
+	}
+	section {
+		font-family: var(--title-font);
+		color: #ffffff;
+	}
+	#content {
+		/* Container */
+		border: solid 2px #ffffff;
+		padding: 25px;
+		border-radius: 10px;
+		color: #ffffff;
+	}
+	.vue-green {
+		color: var(--vue-green);
+	}
+	ul {
+		list-style: none;
+	}
+	li{
+		padding-left: 20px;
+	}
+	li:first-of-type {
+		margin-top: 15px;
+	}
+</style>

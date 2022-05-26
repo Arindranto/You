@@ -1,7 +1,9 @@
 // The list of the members in an array
-// A member will have name, description and image
+// A member will have:
+// assets, personalinfo, educationInfo, skillsInfo, experienceInfo
 let memberList= [
 	{
+		/* SAFIDY */
 		assets: {
 			description: "Information Technology Enthusiast",
 			photo: "safidy_height.png",
@@ -9,36 +11,77 @@ let memberList= [
 		personalInfo: {
 			firstname: "Safidy Herinirina Arindranto",
 			lastname: "Andriantsoa",
-			faculty: "IGGLIA3",
+			faculty: "Business Management, Software Engineering and Artificial Intelligence",
 			age: 20,
-			tel: "0342149563",
-			email: "harimalalamendrika@gmail.com"
+			tel: "+261 34 89 106 78",
+			email: "safidy.herinirina@gmail.com"
 		},
 		educationInfo:{
-			university: {
-				school: "Institut Supérieur Polytechnique de Madagascar",
-				grade: "3m annee",
-				duration: "2019 until now"
-			},
-			college: {
-				school: "Lycée Privée Catholique Notre Dame de Fatima",
-				grade: "BACC D",
-				duration: "2012 ~ 2019"
-			},
+			university: [
+				{
+					school: "Institut Supérieur Polytechnique de Madagascar",
+					grade: "3rd year in Business Management, Software Engineering and Artificial Intelligence",
+					duration: "2019 ~ Now"
+				},
+			],
+			highschool: [
+				{
+					school: "Lycée Jules Ferry Faravohitra",
+					grade: "D Baccalaureate",
+					duration: "2017 ~ 2019"
+				},
+				{
+					school: "International Light High School",
+					duration: "2016 ~ 2017"
+				},
+			],
+			college: [
+				{
+					school: "International Light College",
+					duration: "2013 ~ 2017",
+					grade: "BEPC"
+				},
+				{
+					school: "Collège d'Enseignement Général Antanimena",
+					duration: "2012"
+				},
+			]
 		},
 		skillsInfo:{
-			framework: ["Symfony","ANGULAR","BOOTSTRAP","Flutter"],
-			programmation: ["HTML","CSS","JavaScript","Java","C","PHP","Pascal"],
-			modelization: ["Merise"],
-			bd: ["MySQL"],
-			officeAutomation: ["Word","PowerPoint","Excel"]
+			framework: ["VueJS 3"],
+			programmation: ["HTML 5","CSS 3","JavaScript", "PHP 8", "Python 3","Java","C Programing Language","Pascal Programing Language"],
+			modelization: ["MERISE"],
+			db: ["MySQL", "SQLite 3", "MongoDB", "Microsoft Access"],
+			officeAutomation: ["Microsoft Office Word","Microsoft Office Excel","Microsoft Office PowerPoint"]
 		},
-		experienceInfo: [
-			"- Book-y : web application to manage a library",
-			"- InterMall : mobile application for online sales",
-			"- MadArt : website that shows the beauty of Madagascar"
-		]
+		experienceInfo: {
+			'You Project': {
+				description: 'A website that showcases each and every team member',
+				techs: ['VueJS 3']
+			},
+			'Portfolio Design': {
+				description: 'A full portfolio design and prototype done with Figma.'
+			},
+			'Chess': {
+				description: 'A chessboard web application to help players in their game analysis.',
+				techs: ['HTML 5', 'CSS 3', 'CSS Bootstrap', 'JavaScript']
+			},
+			'Easy Pay': {
+				description: 'A software to manage employees and salary payments.',
+				techs: ['Python 3.10', 'SQLite 3']
+			},
+			'Intermall': {
+				description: 'A mobile application for online saling.',
+				techs: ['Flutter']
+			},
+			'Orientation Universitaire': {
+				description: 'A website designed to help students choosing the right way after high school',
+				techs: ['HTML 5', 'CSS 3']
+			}
+		}
 	},
+	/****************************************************************************************************************/
+	/* MENDRIKA */
 	{
 		assets: {
 			description: "Software Engineer Student",
@@ -53,30 +96,60 @@ let memberList= [
 			email: "harimalalamendrika@gmail.com"
 		},
 		educationInfo:{
-			university: {
-				school: "Institut Supérieur Polytechnique de Madagascar",
-				grade: "3m annee",
-				duration: "2019 until now"
-			},
-			college: {
-				school: "Lycée Privée Catholique Notre Dame de Fatima",
-				grade: "BACC D",
-				duration: "2012 ~ 2019"
-			},
+			university: [
+				{
+					school: "Institut Supérieur Polytechnique de Madagascar",
+					grade: "3rd year in Business Management, Software Engineering and Artificial Intelligence",
+					duration: "2019 ~ Now"
+				},
+			],
+			highschool: [
+				{
+					school: "Lycée Jules Ferry Faravohitra",
+					grade: "D Baccalaureate",
+					duration: "2017 ~ 2019"
+				},
+				{
+					school: "International Light High School",
+					duration: "2016 ~ 2017"
+				},
+			],
+			college: [
+				{
+					school: "International Light College",
+					grade: "",
+					duration: "2017 ~ 2019"
+				},
+				{
+					school: "Collège d'Enseignement Général",
+					duration: "2012"
+				},
+			]
 		},
 		skillsInfo:{
 			framework: ["Symfony","ANGULAR","BOOTSTRAP","Flutter"],
 			programmation: ["HTML","CSS","JavaScript","Java","C","PHP","Pascal"],
 			modelization: ["Merise"],
-			bd: ["MySQL"],
+			db: ["MySQL"],
 			officeAutomation: ["Word","PowerPoint","Excel"]
 		},
-		experienceInfo: [
-			"- Book-y : web application to manage a library",
-			"- InterMall : mobile application for online sales",
-			"- MadArt : website that shows the beauty of Madagascar"
-		]
+		experienceInfo: {
+			'Book-y': {
+				description: 'A web application to manage library',
+				techs: ['Symfony 5', 'MySQL']
+			},
+			'Intermall': {
+				description: 'A mobile application for online saling',
+				techs: ['Flutter',]
+			},
+			'MadArt': {
+				description: 'A website that shows the beauty of Madagascar',
+				techs: ['HTML 5', 'CSS 3']
+			}
+		}
 	},
+	/********************************************************************************************************************************************/
+	/* SARIAKA */
 	{
 		assets: {
 			description: "Web Designer",
@@ -90,31 +163,61 @@ let memberList= [
 			tel: "0342149563",
 			email: "harimalalamendrika@gmail.com"
 		},
-		educationInfo:{
-			university: {
-				school: "Institut Supérieur Polytechnique de Madagascar",
-				grade: "3m annee",
-				duration: "2019 until now"
-			},
-			college: {
-				school: "Lycée Privée Catholique Notre Dame de Fatima",
-				grade: "BACC D",
-				duration: "2012 ~ 2019"
-			},
+		educationInfo: {
+			university: [
+				{
+					school: "Institut Supérieur Polytechnique de Madagascar",
+					grade: "3rd year in Business Management, Software Engineering and Artificial Intelligence",
+					duration: "2019 ~ Now"
+				},
+			],
+			highschool: [
+				{
+					school: "Lycée Jules Ferry Faravohitra",
+					grade: "D Baccalaureate",
+					duration: "2017 ~ 2019"
+				},
+				{
+					school: "International Light High School",
+					duration: "2016 ~ 2017"
+				},
+			],
+			college: [
+				{
+					school: "International Light College",
+					grade: "",
+					duration: "2017 ~ 2019"
+				},
+				{
+					school: "Collège d'Enseignement Général",
+					duration: "2012"
+				},
+			]
 		},
 		skillsInfo:{
 			framework: ["Symfony","ANGULAR","BOOTSTRAP","Flutter"],
 			programmation: ["HTML","CSS","JavaScript","Java","C","PHP","Pascal"],
 			modelization: ["Merise"],
-			bd: ["MySQL"],
+			db: ["MySQL"],
 			officeAutomation: ["Word","PowerPoint","Excel"]
 		},
-		experienceInfo: [
-			"- Book-y : web application to manage a library",
-			"- InterMall : mobile application for online sales",
-			"- MadArt : website that shows the beauty of Madagascar"
-		]
+		experienceInfo: {
+			'Book-y': {
+				description: 'A web application to manage library',
+				techs: ['Symfony 5', 'MySQL']
+			},
+			'Intermall': {
+				description: 'A mobile application for online saling',
+				techs: ['Flutter',]
+			},
+			'MadArt': {
+				description: 'A website that shows the beauty of Madagascar',
+				techs: ['HTML 5', 'CSS 3']
+			}
+		}
 	},
+	/*****************************************************************************************************************************/
+	/* FANIRY */
 	{
 		assets: {
 			description: "Computer Science Student",
@@ -129,31 +232,60 @@ let memberList= [
 			email: "fanirintsoaandrianandraina@gmail.com"
 		},
 		educationInfo:{
-			university: {
-				school: "Institut Supérieur Polytechnique de Madagascar",
-				grade: "3m annee",
-				duration: "2019 until now"
-			},
-			college: {
-				school: "Lycée Privée Catholique Notre Dame de Fatima",
-				grade: "BACC D",
-				duration: "2012 ~ 2019"
-			},
+			university: [
+				{
+					school: "Institut Supérieur Polytechnique de Madagascar",
+					grade: "3rd year in Business Management, Software Engineering and Artificial Intelligence",
+					duration: "2019 ~ Now"
+				},
+			],
+			highschool: [
+				{
+					school: "Lycée Jules Ferry Faravohitra",
+					grade: "D Baccalaureate",
+					duration: "2017 ~ 2019"
+				},
+				{
+					school: "International Light High School",
+					duration: "2016 ~ 2017"
+				},
+			],
+			college: [
+				{
+					school: "International Light College",
+					grade: "",
+					duration: "2017 ~ 2019"
+				},
+				{
+					school: "Collège d'Enseignement Général",
+					duration: "2012"
+				},
+			]
 		},
 		skillsInfo:{
 			framework: ["NodeJs","ReactJs","BOOTSTRAP","Flutter"],
 			programmation: ["HTML","CSS","JavaScript","Java","C","PHP","Pascal"],
 			modelization: ["Merise"],
-			bd: ["MySQL"],
+			db: ["MySQL"],
 			officeAutomation: ["Word","PowerPoint","Excel"]
 		},
-		experienceInfo: [
-			"- Book-e: Book management web application",
-			"- RestoMS: Restaurant management web application",
-			"- Secooly: Student management web application",
-			"- Lyrics Mathieu Mobile application containing music lyrics"
-		]
+		experienceInfo: {
+			'Book-y': {
+				description: 'A web application to manage library',
+				techs: ['Symfony 5', 'MySQL']
+			},
+			'Intermall': {
+				description: 'A mobile application for online saling',
+				techs: ['Flutter',]
+			},
+			'MadArt': {
+				description: 'A website that shows the beauty of Madagascar',
+				techs: ['HTML 5', 'CSS 3']
+			}
+		}
 	},
+	/****************************************************************************************************************************/
+	/* TSIORY */
 	{
 		assets: {
 			description: "UI/UX Deveoper",
@@ -167,31 +299,58 @@ let memberList= [
 			tel: "0342149563",
 			email: "harimalalamendrika@gmail.com"
 		},
-		educationInfo:{
-			university: {
-				school: "Institut Supérieur Polytechnique de Madagascar",
-				grade: "3m annee",
-				duration: "2019 until now"
-			},
-			college: {
-				school: "Lycée Privée Catholique Notre Dame de Fatima",
-				grade: "BACC D",
-				duration: "2012 ~ 2019"
-			},
+		educationInfo: {
+			university: [
+				{
+					school: "Institut Supérieur Polytechnique de Madagascar",
+					grade: "3rd year in Business Management, Software Engineering and Artificial Intelligence",
+					duration: "2019 ~ Now"
+				},
+			],
+			highschool: [
+				{
+					school: "Lycée Jules Ferry Faravohitra",
+					grade: "D Baccalaureate",
+					duration: "2017 ~ 2019"
+				},
+				{
+					school: "International Light High School",
+					duration: "2016 ~ 2017"
+				},
+			],
+			college: [
+				{
+					school: "International Light College",
+					grade: "",
+					duration: "2017 ~ 2019"
+				},				{
+					school: "Collège d'Enseignement Général",
+					duration: "2012"
+				},
+			]
 		},
 		skillsInfo:{
 			framework: ["Symfony","ANGULAR","BOOTSTRAP","Flutter"],
 			programmation: ["HTML","CSS","JavaScript","Java","C","PHP","Pascal"],
 			modelization: ["Merise"],
-			bd: ["MySQL"],
+			db: ["MySQL"],
 			officeAutomation: ["Word","PowerPoint","Excel"]
 		},
-		experienceInfo: [
-			"- Book-y : web application to manage a library",
-			"- InterMall : mobile application for online sales",
-			"- MadArt : website that shows the beauty of Madagascar"
-		]
-	},
+		experienceInfo: {
+			'Book-y': {
+				description: 'A web application to manage library',
+				techs: ['Symfony 5', 'MySQL']
+			},
+			'Intermall': {
+				description: 'A mobile application for online saling',
+				techs: ['Flutter',]
+			},
+			'MadArt': {
+				description: 'A website that shows the beauty of Madagascar',
+				techs: ['HTML 5', 'CSS 3']
+			}
+		}
+	}
 ];
 
 export default memberList;
