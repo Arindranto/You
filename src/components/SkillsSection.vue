@@ -1,9 +1,30 @@
-<!-- A simple PersonalInfoSection test -->
+<!-- A simple PersonalInfoSection test <ul>
+        <li v-for= "(skill, index) in skills" :key= "index">{{skill}}</li>
+      </ul> -->
 <template>
 	<section>
 		<h3>SkillsSection</h3>
 		<div id= "#content">
-
+      <ul>
+        Framework :
+        <li v-for= "(skill, index) in skillsInfo.framework" :key= "index">{{skill}}</li>
+      </ul>
+      <ul>
+        Framework :
+        <li v-for= "(skill, index) in skillsInfo.programmation" :key= "index">{{skill}}</li>
+      </ul>
+      <ul>
+        Framework :
+        <li v-for= "(skill, index) in skillsInfo.modelization" :key= "index">{{skill}}</li>
+      </ul>
+      <ul>
+        Framework :
+        <li v-for= "(skill, index) in skillsInfo.bd" :key= "index">{{skill}}</li>
+      </ul>
+      <ul>
+        Framework :
+        <li v-for= "(skill, index) in skillsInfo.officeAutomation" :key= "index">{{skill}}</li>
+      </ul>
 		</div>
 	</section>
 </template>
@@ -11,8 +32,18 @@
 <script>
 	export default {
 		props: {
+      skillsInfo: {
+        required: true,
+        default: {
+          framework: [''],
+					programmation: [''],
+					modelization: [''],
+					bd: [''],
+					officeAutomation: ['']
 
-		},
+        }
+      }
+    },
 	}
 </script>
 
