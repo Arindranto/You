@@ -9,8 +9,35 @@ let memberList= [
 		personalInfo: {
 			firstname: "Safidy Herinirina Arindranto",
 			lastname: "Andriantsoa",
-			age: 20
+			faculty: "IGGLIA3",
+			age: 20,
+			tel: "0342149563",
+			email: "harimalalamendrika@gmail.com"
 		},
+		educationInfo:{
+			university: {
+				school: "Institut Supérieur Polytechnique de Madagascar",
+				grade: "3m annee",
+				duration: "2019 until now"
+			},
+			college: {
+				school: "Lycée Privée Catholique Notre Dame de Fatima",
+				grade: "BACC D",
+				duration: "2012 ~ 2019"
+			},
+		},
+		skillsInfo:{
+			framework: ["Symfony","ANGULAR","BOOTSTRAP","Flutter"],
+			programmation: ["HTML","CSS","JavaScript","Java","C","PHP","Pascal"],
+			modelization: ["Merise"],
+			bd: ["MySQL"],
+			officeAutomation: ["Word","PowerPoint","Excel"]
+		},
+		experienceInfo: [
+			"Book-y : web application to manage a library",
+			"InterMall : mobile application for online sales",
+			"MadArt : website that shows the beauty of Madagascar"
+		]
 	},
 	{
 		assets: {
@@ -20,8 +47,35 @@ let memberList= [
 		personalInfo: {
 			firstname: "Mendrika Henintsoa",
 			lastname: "Harimalala",
-			age: 20
+			faculty: "IGGLIA3",
+			age: 20,
+			tel: "0342149563",
+			email: "harimalalamendrika@gmail.com"
 		},
+		educationInfo:{
+			university: {
+				school: "Institut Supérieur Polytechnique de Madagascar",
+				grade: "3m annee",
+				duration: "2019 until now"
+			},
+			college: {
+				school: "Lycée Privée Catholique Notre Dame de Fatima",
+				grade: "BACC D",
+				duration: "2012 ~ 2019"
+			},
+		},
+		skillsInfo:{
+			framework: ["Symfony","ANGULAR","BOOTSTRAP","Flutter"],
+			programmation: ["HTML","CSS","JavaScript","Java","C","PHP","Pascal"],
+			modelization: ["Merise"],
+			bd: ["MySQL"],
+			officeAutomation: ["Word","PowerPoint","Excel"]
+		},
+		experienceInfo: [
+			"Book-y : web application to manage a library",
+			"InterMall : mobile application for online sales",
+			"MadArt : website that shows the beauty of Madagascar"
+		]
 	},
 	{
 		assets: {
@@ -31,8 +85,35 @@ let memberList= [
 		personalInfo: {
 			firstname: "Aina Sariaka",
 			lastname: "Andriamanana",
-			age: 20
+			faculty: "IGGLIA3",
+			age: 20,
+			tel: "0342149563",
+			email: "harimalalamendrika@gmail.com"
 		},
+		educationInfo:{
+			university: {
+				school: "Institut Supérieur Polytechnique de Madagascar",
+				grade: "3m annee",
+				duration: "2019 until now"
+			},
+			college: {
+				school: "Lycée Privée Catholique Notre Dame de Fatima",
+				grade: "BACC D",
+				duration: "2012 ~ 2019"
+			},
+		},
+		skillsInfo:{
+			framework: ["Symfony","ANGULAR","BOOTSTRAP","Flutter"],
+			programmation: ["HTML","CSS","JavaScript","Java","C","PHP","Pascal"],
+			modelization: ["Merise"],
+			bd: ["MySQL"],
+			officeAutomation: ["Word","PowerPoint","Excel"]
+		},
+		experienceInfo: [
+			"Book-y : web application to manage a library",
+			"InterMall : mobile application for online sales",
+			"MadArt : website that shows the beauty of Madagascar"
+		]
 	},
 	{
 		assets: {
@@ -42,8 +123,35 @@ let memberList= [
 		personalInfo: {
 			firstname: "Fanirintsoa Mathieu",
 			lastname: "Andrianandraina",
-			age: 21
+			faculty: "ISAIA3",
+			age: 21,
+			tel: "0342149563",
+			email: "harimalalamendrika@gmail.com"
 		},
+		educationInfo:{
+			university: {
+				school: "Institut Supérieur Polytechnique de Madagascar",
+				grade: "3m annee",
+				duration: "2019 until now"
+			},
+			college: {
+				school: "Lycée Privée Catholique Notre Dame de Fatima",
+				grade: "BACC D",
+				duration: "2012 ~ 2019"
+			},
+		},
+		skillsInfo:{
+			framework: ["Symfony","ANGULAR","BOOTSTRAP","Flutter"],
+			programmation: ["HTML","CSS","JavaScript","Java","C","PHP","Pascal"],
+			modelization: ["Merise"],
+			bd: ["MySQL"],
+			officeAutomation: ["Word","PowerPoint","Excel"]
+		},
+		experienceInfo: [
+			"Book-y : web application to manage a library",
+			"InterMall : mobile application for online sales",
+			"MadArt : website that shows the beauty of Madagascar"
+		]
 	},
 	{
 		assets: {
@@ -53,8 +161,35 @@ let memberList= [
 		personalInfo: {
 			firstname: "Tsiory Herinjato",
 			lastname: "Andriamahefa",
-			age: 21
+			faculty: "ISAIA3",
+			age: 21,
+			tel: "0342149563",
+			email: "harimalalamendrika@gmail.com"
 		},
+		educationInfo:{
+			university: {
+				school: "Institut Supérieur Polytechnique de Madagascar",
+				grade: "3m annee",
+				duration: "2019 until now"
+			},
+			college: {
+				school: "Lycée Privée Catholique Notre Dame de Fatima",
+				grade: "BACC D",
+				duration: "2012 ~ 2019"
+			},
+		},
+		skillsInfo:{
+			framework: ["Symfony","ANGULAR","BOOTSTRAP","Flutter"],
+			programmation: ["HTML","CSS","JavaScript","Java","C","PHP","Pascal"],
+			modelization: ["Merise"],
+			bd: ["MySQL"],
+			officeAutomation: ["Word","PowerPoint","Excel"]
+		},
+		experienceInfo: [
+			"Book-y : web application to manage a library",
+			"InterMall : mobile application for online sales",
+			"MadArt : website that shows the beauty of Madagascar"
+		]
 	},
 ];
 

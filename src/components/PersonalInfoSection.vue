@@ -1,10 +1,17 @@
 <!-- A simple PersonalInfoSection test -->
 <template>
 	<section>
+		<p>PersonalInfoSection</p>
 		<h1><span class= "vue-green">{{ personalInfo.firstname }}</span> {{ personalInfo.lastname.toUpperCase() }}</h1>
+		
 		<div id= "#content">
-			{{ personalInfo.age }} years old <span class= "vue-green">{{personalInfo.description}}</span>
+			<span class= "vue-green">{{personalInfo.description}}</span>
+			<p>{{ personalInfo.age }} years old</p>
+			<p>{{personalInfo.faculty}}</p>
+      <p>{{personalInfo.email}}</p>
+      <p>{{personalInfo.tel}}</p>
 		</div>
+		
 	</section>
 </template>
 
@@ -20,8 +27,11 @@
 					firstname: 'Firstname',
 					lastname: 'Lastname',
 					description: 'Description',
+					faculty: 'Info',
 					age: 18,
 					photo: 'logo.png',
+          tel: '0333333333',
+          email: 'test@gmail.com'
 				}
 			}
 		},
