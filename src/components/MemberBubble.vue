@@ -24,8 +24,8 @@
 <style scoped>
 	@import '@/assets/style/style-data';
 	img {
-		width: 70px;
-		height: 70px;
+		width: 60px;
+		height: 60px;
 		padding: 3px;
 		margin: 5px 0;
 		background: var(--dark-blue);
@@ -41,6 +41,8 @@
 	.back:hover img {
 		padding: 0;
 		box-shadow: 0 0 10px var(--vue-green);
+		transition: all .3s;
+		transition-timing-function: ease-in;
 	}
 	/* The actually active component */
 	.active img {
@@ -50,5 +52,7 @@
 	}
 	.active:hover img{
 		box-shadow: 0 0 20px var(--dark-green);
+		transition: all .3s;
+		transition-timing-function: ease-in;
 	}
 </style>

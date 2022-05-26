@@ -82,7 +82,8 @@
   .hidden {
     background: var(--vue-blue);
     animation-name: hideIt;
-    animation-duration: .3s;
+    animation-duration: .6s;
     animation-fill-mode: forwards;
+		transition-timing-function: ease-in;
   }
 </style>

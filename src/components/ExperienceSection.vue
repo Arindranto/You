@@ -1,25 +1,17 @@
 <!-- A simple PersonalInfoSection test -->
 <template>
 	<section>
-		<h1>{{ educationInfo.college }} {{ educationInfo.lycee }} </h1>
-	
+		<p>ExperienceSection</p>
+		
 	</section>
 </template>
 
 <script>
 	/* props:
-			* EducationInfo: to get the information needed to be displayed such as firstname, lastname, etc... 
+			* personalInfo: to get the information needed to be displayed such as firstname, lastname, etc... 
 	*/
 	export default {
-		props: {
-			educationInfo: {
-				required: true,
-				default: {
-					college: "tsisy",
-					lycee: "vide"
-				}
-			}
-		},
+		
 	}
 </script>
 

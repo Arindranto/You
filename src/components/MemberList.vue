@@ -6,7 +6,7 @@
   -->
   <div v-if= "selected === null" id= "list">
     <!-- null means HOME PAGE -->
-    <MemberCard v-for= "(member, index) in members" :key= "index" :id= "`card-${index}`" :info= "member" @passToMemberList= "passToHomePage(index)" /> <!-- pass with the index as an id to the HomePage -->
+    <MemberCard class="list" v-for= "(member, index) in members" :key= "index" :id= "`card-${index}`" :info= "member" @passToMemberList= "passToHomePage(index)" /> <!-- pass with the index as an id to the HomePage -->
   </div>
   <!----------------------------------------------------->
   <div v-else id= "list">
@@ -85,4 +85,16 @@
     flex-flow: row wrap;
     justify-content: space-around;
   }
+  .list {
+	animation: andrana 1s;
+
+    }
+	@keyframes andrana{
+		0%{
+			transform:scale(0.95) ;
+			}
+		100%{
+			transform: scale(1);
+			}
+	}
 </style>

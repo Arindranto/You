@@ -11,9 +11,15 @@
 		</div>
 
 		<!-- SECTIONS GO HERE -->
-		<PersonalInfoSection class="personInfo" :personalInfo= "personalInfo" />
-		<EducationSection :educationInfo= "educationInfo" />
-
+		<div class="grid">
+			<PersonalInfoSection class="grid-child" :personalInfo= "personalInfo" />
+			
+			<EducationSection class="grid-child" :educationInfo= "educationInfo"/>
+		
+			<SkillsSection class="grid-child" :skillsInfo= "skillsInfo"/>
+			
+			<EducationSection class="grid-child" :educationInfo= "educationInfo"/>
+		</div>
 	</div>
 </template>
 
@@ -22,16 +28,18 @@
 		components:
 			* PersonalInfoSection
 			* EducationSection
-			* SkillSection
+			* SkillsSection
 			* ExperienceSection
 		props:
 			* id: to get the concerned member from the memberList in members-data.js
 		data:
 			* personalInfo: an object with the informations from memberList to pass to the PersonalInfoSection
 	*/
-	import PersonalInfoSection from '@/components/MemberInfo/PersonalInfoSection.vue';
-	import EducationSection from '@/components/MemberInfo/EducationSection.vue';
-	import MemberList from '@/components/MemberList'
+	import PersonalInfoSection from '@/components/PersonalInfoSection';
+	import EducationSection from '@/components/EducationSection';
+	import SkillsSection from '@/components/SkillsSection';
+	//import ExperienceSection from '@/components/ExperienceSection';
+	import MemberList from '@/components/MemberList';
 	import memberList from '@/datas/members-data';
 
 	export default {
@@ -39,6 +47,8 @@
 		components: {
 			PersonalInfoSection,
 			EducationSection,
+			SkillsSection,
+			//ExperienceSection,
 			MemberList
 		},
 		props: {
@@ -51,28 +61,38 @@
 			// Because it's computed everytime
 			personalInfo() {
 				let member= memberList[this.id];	// Get the member data as an object
-
+				
 				let me= {
 					firstname: member.personalInfo.firstname,
 					lastname: member.personalInfo.lastname,
 					age: member.personalInfo.age,
 					description: member.assets.description,
-					photo: member.assets.photo,
-					college: member.educationInfo.college
+					faculty: member.personalInfo.faculty,
+				
 				}
 				return me;
 			},
 			educationInfo() {
-				let member= memberList[this.id];	// Get the member data as an object
-
+				let member= memberList[this.id];
 				let me= {
-
-					college: member.educationInfo.college,
-					lycee: member.educationInfo.lycee,
+					universitySchool: member.educationInfo.universitySchool,
+					collegeSchool: member.educationInfo.collegeSchool,
+					universityDiploma: member.educationInfo.universityDiploma,
+					collegeDiploma: member.educationInfo.collegeDiploma
 				}
 				return me;
-			}
-			
+			},
+			skillsInfo() {
+				let member= memberList[this.id];
+				let me= {
+					framework: member.skillsInfo.framework,
+					programmation: member.skillsInfo.programmation,
+					modelization: member.skillsInfo.modelization,
+					bd: member.skillsInfo.bd,
+					officeAutomation: member.skillsInfo.officeAutomation
+				}
+				return me;
+			},
 		},
 		methods: {
 			passToApp(id) {
@@ -89,20 +109,24 @@
 	* {
 		color: #ffffff;
 	}
+	
 	#container {
 		position: absolute;
 		height: 100%;
 		width: 100%;
 		padding-left: 110px;
+		padding-right: 110px;
 	}
 	#sidebar {
 		position: absolute;
 		text-align: center;
 		left: 0;
 		background: var(--vue-blue);
-		width: 80px;
+		width: 70px;
 		height: 100%;
 		padding-top: 20px;
+		position: fixed;
+		z-index: 1000;
 	}
 	.back-btn {
 		position: absolute;
@@ -110,8 +134,8 @@
 		place-items: center;
 		bottom: 20px;
 		left: 10px;
-		height: 60px;
-		width: 60px;
+		height: 50px;
+		width: 50px;
 		border: solid 5px var(--vue-green);
 		border-radius: 50%;
 		cursor: pointer;
@@ -130,23 +154,31 @@
 	}
 	.back-btn:hover {
 		border-color: var(--dark-blue);
+		transition: all .2s;
+		transition-timing-function: ease-in;
 	}
 	.back-btn:hover #back-arrow{
 		border-left-color: var(--dark-blue);
 		border-bottom-color:  var(--dark-blue);
+		transition: all .2s;
+		transition-timing-function: ease-in;
 	}
-	.personInfo {
-	animation: andrana 0.2s;
-	justify-content: center;
-	align-self: center;
-    }
-	@keyframes andrana{
-		0%{
-			transform: translateX(400px) ;
-			}
-		100%{
-			transform: translatex(0);
-			}
+	/*Grid positionning */
+	.grid-child {
+		border: var(--vue-green) solid 3px;
+		border-radius: 20px;
+		padding: 10px;
+	}
+	.grid-child:nth-child(1){
+		background-color: var(--vue-blue);
+
+	}
+	.grid {
+		margin-top: 10px;
+		display: grid;
+		grid-gap: 20px;
+		grid-template-columns: repeat(1, minmax(270px, 1fr));
+		
 	}
 
 
