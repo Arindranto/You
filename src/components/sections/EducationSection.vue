@@ -57,11 +57,7 @@
 
 <style scoped>
 	@import '@/assets/style/style-data';
-	
-	h3 {
-		/* Education title */
-		text-shadow: 0 0 10px var(--vue-green);
-	}
+
 	h3.vue-green {
 		/* Section title: University, etc */
 		margin-top: 15px;
