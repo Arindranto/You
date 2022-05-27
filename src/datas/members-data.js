@@ -232,7 +232,7 @@ let memberList= [
 			],
 			college: [
 				{
-					school: "Collège Privée Catholique Notre Dame de Fatima",
+					school: "Lycéee Privée Catholique Notre Dame de Fatima",
 					grade: "BEPC",
 					duration: "2012 ~ 2016"
 				},
@@ -246,18 +246,27 @@ let memberList= [
 			officeAutomation: ["Word","PowerPoint","Excel"]
 		},
 		experienceInfo: {
-			'Book-y': {
-				description: 'A web application to manage library',
-				techs: ['Symfony 5', 'MySQL']
-			},
-			'Intermall': {
+		
+			'Secooly': {
 				description: 'A mobile application for online sales',
 				techs: ['Flutter',]
 			},
-			'MadArt': {
-				description: 'A website that shows the beauty of Madagascar',
-				techs: ['HTML 5', 'CSS 3']
-			}
+			'RestoMS': {
+				description: 'Student management web application',
+				techs: ['Code Igniter']
+			},
+			'Book-e': {
+				description: 'Book management web application',
+				techs: ['PHP', 'MySQL', 'Bootstrap']
+			},
+			'Lyrics Mathieu': {
+				description: 'Mobile application containing music lyrics',
+				techs: ['Flutter']
+			},
+			'Online Diplome': {
+				description: 'Web application that digitalize the obtain of baccalaureate certificates',
+				techs: ['NodeJs', 'VueJs']
+			},
 		}
 	},
 	/****************************************************************************************************************************/
@@ -287,14 +296,14 @@ let memberList= [
 				{
 					school: "Lycée Jules Ferry Faravohitra",
 					grade: "D Baccalaureate",
-					duration: "2017 ~ 2019"
+					duration: "2016 ~ 2019"
 				},
 			],
 			college: [
 				{
 					school: "International Light College",
 					grade: "",
-					duration: "2017 ~ 2019"
+					duration: "2012 ~ 2016"
 				},
 			]
 		},
@@ -304,8 +313,8 @@ let memberList= [
 		// 	"2005 ~ 2019 : Lycée Privée Catholique Notre Dame de Fatima"
 		// ],
 		skillsInfo:{
-			framework: ["Symfony","ANGULAR","BOOTSTRAP","Flutter"],
-			programmation: ["HTML","CSS","JavaScript","Java","C","PHP","Pascal"],
+			framework: ["VueJS 3","BOOTSTRAP","Flutter"],
+			programmation: ["HTML 5","CSS 3","JavaScript","Java","C","PHP","Pascal"],
 			modelization: ["Merise"],
 			db: ["MySQL"],
 			officeAutomation: ["Word","PowerPoint","Excel"]
