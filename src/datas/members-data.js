@@ -52,7 +52,7 @@ let memberList= [
 			programmation: ["HTML 5","CSS 3","JavaScript", "PHP 8", "Python 3","Java","C Programing Language","Pascal Programing Language"],
 			modelization: ["MERISE"],
 			db: ["MySQL", "SQLite 3", "MongoDB", "Microsoft Access"],
-			officeAutomation: ["Microsoft Office Word","Microsoft Office Excel","Microsoft Office PowerPoint"]
+			officeAutomation: ["Microsoft Word", "Microsoft PowerPoint", "Microsoft Excel"]
 		},
 		experienceInfo: {
 			'You Project': {
@@ -120,8 +120,8 @@ let memberList= [
 		},
 		skillsInfo:{
 			framework: ["Symfony","ANGULAR","BOOTSTRAP","Flutter"],
-			programmation: ["HTML","CSS","JavaScript","Java","C","PHP","Pascal"],
-			modelization: ["Merise"],
+			programmation: ["HTML 5","CSS 3","JavaScript","Java","C Programing Language","PHP","Pascal Programing Language"],
+			modelization: ["MERISE"],
 			db: ["MySQL"],
 			officeAutomation: ["Microsoft Word","Microsoft PowerPoint","Microsoft Excel"]
 		},
@@ -180,10 +180,10 @@ let memberList= [
 		},
 		skillsInfo:{
 			framework: ["Flutter"],
-			programmation: ["HTML","CSS","JavaScript","C","PHP","Pascal"],
-			modelization: ["Merise"],
+			programmation: ["HTML 5","CSS 3","JavaScript","C Programing Language","PHP","Pascal Programing Language"],
+			modelization: ["MERISE"],
 			db: ["MySQL"],
-			officeAutomation: ["Word","PowerPoint","Excel"]
+			officeAutomation: ["Microsoft Word","Micfosoft PowerPoint","Microsoft Excel"]
 		},
 		experienceInfo: {
 			'Malagasy Mitsabo': {
@@ -212,7 +212,7 @@ let memberList= [
 			lastname: "Andrianandraina",
 			faculty: "Computer Science, Applied Statistics and Artificial Intelligence",
 			age: 21,
-			tel: "0347236379",
+			tel: "+261 34 72 363 79",
 			email: "fanirintsoaandrianandraina@gmail.com"
 		},
 		educationInfo:{
@@ -240,10 +240,10 @@ let memberList= [
 		},
 		skillsInfo:{
 			framework: ["NodeJs","ReactJs","BOOTSTRAP","Flutter"],
-			programmation: ["HTML","CSS","JavaScript","Java","C","PHP","Pascal"],
-			modelization: ["Merise"],
+			programmation: ["HTML 5","CSS 3","JavaScript","Java","C Programing Language","PHP","Pascal Programing Language"],
+			modelization: ["MERISE"],
 			db: ["MySQL"],
-			officeAutomation: ["Word","PowerPoint","Excel"]
+			officeAutomation: ["Microsoft Word", "Microsoft PowerPoint", "Microsoft Excel"]
 		},
 		experienceInfo: {
 		
@@ -281,7 +281,7 @@ let memberList= [
 			lastname: "Andriamahefa",
 			faculty: "Computer Science, Applied Statistics and Artificial Intelligence",
 			age: 21,
-			tel: "0344438288",
+			tel: "+261 34 44 382 88",
 			email: "andriamahefatsiory1@gmail.com"
 		},
 		educationInfo: {
@@ -314,10 +314,10 @@ let memberList= [
 		// ],
 		skillsInfo:{
 			framework: ["VueJS 3","BOOTSTRAP","Flutter"],
-			programmation: ["HTML 5","CSS 3","JavaScript","Java","C","PHP","Pascal", "Python"],
-			modelization: ["Merise"],
+			programmation: ["HTML 5","CSS 3","JavaScript","Java","C Programing Language","PHP","Pascal Programing Language", "Python"],
+			modelization: ["MERISE"],
 			db: ["MySQL"],
-			officeAutomation: ["Word","PowerPoint","Excel"]
+			officeAutomation: ["Microsoft Word", "Microsoft PowerPoint", "Microsoft Excel"]
 		},
 		experienceInfo: {
 			'Online Diplome': {
