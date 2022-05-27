@@ -28,7 +28,7 @@ let memberList= [
 				{
 					school: "Lycée Jules Ferry Faravohitra",
 					grade: "D Baccalaureate",
-					duration: "2017 ~ 2019"
+					duration: "2018 ~ 2019"
 				},
 				{
 					school: "International Light High School",
@@ -38,7 +38,7 @@ let memberList= [
 			college: [
 				{
 					school: "International Light College",
-					duration: "2013 ~ 2017",
+					duration: "2013 ~ 2015",
 					grade: "BEPC"
 				},
 				{
@@ -107,9 +107,16 @@ let memberList= [
 				{
 					school: "Lycée Privée Catholique Notre Dame de Fatima",
 					grade: "D Baccalaureate",
-					duration: "2012 ~ 2019"
+					duration: "2016 ~ 2019"
 				},
 			],
+			college: [
+				{
+					school: "Collège Privée Catholique Notre Dame de Fatima",
+					grade: "BEPC",
+					duration: "2012 ~ 2016"
+				}
+			]
 		},
 		skillsInfo:{
 			framework: ["Symfony","ANGULAR","BOOTSTRAP","Flutter"],
@@ -145,8 +152,8 @@ let memberList= [
 			lastname: "Andriamanana",
 			faculty: "Business Management, Software Engineering and Artificial Intelligence",
 			age: 20,
-			tel: "0342149563",
-			email: "harimalalamendrika@gmail.com"
+			tel: "+261 34 08 157 57",
+			email: "andriamananaaina13a@gmail.com"
 		},
 		educationInfo: {
 			university: [
@@ -158,38 +165,30 @@ let memberList= [
 			],
 			highschool: [
 				{
-					school: "Lycée Jules Ferry Faravohitra",
+					school: "Lycée Saint Francois Xavier Antanimena",
 					grade: "D Baccalaureate",
-					duration: "2017 ~ 2019"
-				},
-				{
-					school: "International Light High School",
-					duration: "2016 ~ 2017"
+					duration: "2016 ~ 2019"
 				},
 			],
 			college: [
 				{
-					school: "International Light College",
+					school: "Collège Saint François Xavier Antanimena",
 					grade: "",
-					duration: "2017 ~ 2019"
-				},
-				{
-					school: "Collège d'Enseignement Général",
-					duration: "2012"
+					duration: "2012 ~ 2016"
 				},
 			]
 		},
 		skillsInfo:{
-			framework: ["Symfony","ANGULAR","BOOTSTRAP","Flutter"],
-			programmation: ["HTML","CSS","JavaScript","Java","C","PHP","Pascal"],
+			framework: ["Flutter"],
+			programmation: ["HTML","CSS","JavaScript","C","PHP","Pascal"],
 			modelization: ["Merise"],
 			db: ["MySQL"],
 			officeAutomation: ["Word","PowerPoint","Excel"]
 		},
 		experienceInfo: {
-			'Book-y': {
-				description: 'A web application to manage library',
-				techs: ['Symfony 5', 'MySQL']
+			'Malagasy Mitsabo': {
+				description: 'A patient management software',
+				techs: ['Python 3']
 			},
 			'Intermall': {
 				description: 'A mobile application for online sales',
@@ -220,30 +219,22 @@ let memberList= [
 			university: [
 				{
 					school: "Institut Supérieur Polytechnique de Madagascar",
-					grade: "3rd year in Business Management, Software Engineering and Artificial Intelligence",
+					grade: "3rd year in Computer Science, Applied Statistics and Artificial Intelligence",
 					duration: "2019 ~ Now"
 				},
 			],
 			highschool: [
 				{
-					school: "Lycée Jules Ferry Faravohitra",
+					school: "Lycée Privée Catholique Notre Dame de Fatima",
 					grade: "D Baccalaureate",
-					duration: "2017 ~ 2019"
-				},
-				{
-					school: "International Light High School",
-					duration: "2016 ~ 2017"
+					duration: "2016 ~ 2019"
 				},
 			],
 			college: [
 				{
-					school: "International Light College",
-					grade: "",
-					duration: "2017 ~ 2019"
-				},
-				{
-					school: "Collège d'Enseignement Général",
-					duration: "2012"
+					school: "Collège Privée Catholique Notre Dame de Fatima",
+					grade: "BEPC",
+					duration: "2012 ~ 2016"
 				},
 			]
 		},
@@ -288,7 +279,7 @@ let memberList= [
 			university: [
 				{
 					school: "Institut Supérieur Polytechnique de Madagascar",
-					grade: "3rd year in Business Management, Software Engineering and Artificial Intelligence",
+					grade: "3rd year in Computer Science, Applied Statistics and Artificial Intelligence",
 					duration: "2019 ~ Now"
 				},
 			],
@@ -298,22 +289,20 @@ let memberList= [
 					grade: "D Baccalaureate",
 					duration: "2017 ~ 2019"
 				},
-				{
-					school: "International Light High School",
-					duration: "2016 ~ 2017"
-				},
 			],
 			college: [
 				{
 					school: "International Light College",
 					grade: "",
 					duration: "2017 ~ 2019"
-				},				{
-					school: "Collège d'Enseignement Général",
-					duration: "2012"
 				},
 			]
 		},
+		// To be confirmed information
+		// educationInfo:[
+		// 	"2019 ~ 2020 : Institut Supérieur Polytechnique de Madagascar",
+		// 	"2005 ~ 2019 : Lycée Privée Catholique Notre Dame de Fatima"
+		// ],
 		skillsInfo:{
 			framework: ["Symfony","ANGULAR","BOOTSTRAP","Flutter"],
 			programmation: ["HTML","CSS","JavaScript","Java","C","PHP","Pascal"],
