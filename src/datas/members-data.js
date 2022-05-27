@@ -264,7 +264,7 @@ let memberList= [
 	/* TSIORY */
 	{
 		assets: {
-			description: "UI/UX Deveoper",
+			description: "Front End Developer",
 			photo: "tsiory_height.png",
 		},
 		personalInfo: {
@@ -272,8 +272,8 @@ let memberList= [
 			lastname: "Andriamahefa",
 			faculty: "Computer Science, Applied Statistics and Artificial Intelligence",
 			age: 21,
-			tel: "0342149563",
-			email: "harimalalamendrika@gmail.com"
+			tel: "0344438288",
+			email: "andriamahefatsiory1@gmail.com"
 		},
 		educationInfo: {
 			university: [
