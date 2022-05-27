@@ -6,13 +6,13 @@
   -->
   <div v-if= "selected === null" id= "list">
     <!-- null means HOME PAGE -->
-    <MemberCard v-for= "(member, index) in members" :key= "index" :id= "`card-${index}`" :info= "member" @passToMemberList= "passToHomePage(index)" /> <!-- pass with the index as an id to the HomePage -->
+    <MemberCard class="list" v-for= "(member, index) in members" :key= "index" :id= "`card-${index}`" :info= "member" @passToMemberList= "passToHomePage(index)" /> <!-- pass with the index as an id to the HomePage -->
   </div>
   <!----------------------------------------------------->
   <div v-else id= "list">
     <!-- PROFILE PAGE WITH A SELECTED ID -->
     <!-- The active one will be the one with the correct id -->
-    <MemberBubble :class='{active: index === selected}'  v-for= "(member, index) in members" :key= "index" :id= "`card-${index}`" :src= "member.photo" @passToMemberList= "passToProfilePage(index)" />  <!-- pass with the index as an id to the ProfilePage -->
+    <MemberBubble :class='{active: index === selected}'  v-for= "(member, index) in members" :key= "index" :src= "member.photo" @passToMemberList= "passToProfilePage(index)" />  <!-- pass with the index as an id to the ProfilePage -->
   </div>
 </template>
 
@@ -48,6 +48,8 @@
           id: i,
           firstname: member.personalInfo.firstname,
           lastname: member.personalInfo.lastname,
+          college: member.educationInfo.college,
+          lycee: member.educationInfo.lycee,
           description: member.assets.description,
           photo: member.assets.photo
         });
@@ -83,4 +85,16 @@
     flex-flow: row wrap;
     justify-content: space-around;
   }
+  .list {
+	animation: andrana 1s;
+
+    }
+	@keyframes andrana{
+		0%{
+			transform:scale(0.95) ;
+			}
+		100%{
+			transform: scale(1);
+			}
+	}
 </style>

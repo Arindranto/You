@@ -24,10 +24,9 @@
 <style scoped>
 	@import '@/assets/style/style-data';
 	img {
-		width: 70px;
-		height: 70px;
-		padding: 3px;
-		margin: 5px 0;
+		width: 55px;
+		height: 55px;
+		margin: 7.5px 0;
 		background: var(--dark-blue);
 		border-radius: 50%;
 	}
@@ -37,20 +36,22 @@
 		width: 100%;
 		cursor: pointer;
 	}
-	.back:hover {
-		background: var(--dark-blue);
-	}
+
 	.back:hover img {
-		padding: 0;
-		background: var(--vue-blue);
+		padding: 2px;
+		box-shadow: 0 0 10px var(--vue-green);
+		transition: all .3s;
+		transition-timing-function: ease-in;
 	}
 	/* The actually active component */
 	.active img {
 		padding: 0;
 		background: var(--vue-green);
-		box-shadow: 0 0 10px #ffffff;
+		box-shadow: 0 0 10px var(--dark-green);
 	}
-	.active:hover {
-		background: var(--vue-green);
+	.active:hover img{
+		box-shadow: 0 0 20px var(--dark-green);
+		transition: all .3s;
+		transition-timing-function: ease-in;
 	}
 </style>

@@ -1,11 +1,11 @@
 # YOU
 
 ## Group members:
-	- Mendrika Henintsoa HARIMALALA
-	- Aina Sariaka ANDRIAMANANA
-	- Fanirintsoa Mathieu ANDRIANANDRAINA
-	- Tsiory Herinjato ANDRIAMAHEFA
-	- Safidy Herinirina Arindranto ANDRIANTSOA
+	- Mendrika Henintsoa HARIMALALA (IGGLIA 3)
+	- Aina Sariaka ANDRIAMANANA (IGGLIA 3)
+	- Fanirintsoa Mathieu ANDRIANANDRAINA (ISAIA 3)
+	- Tsiory Herinjato ANDRIAMAHEFA (ISAIA 3)
+	- Safidy Herinirina Arindranto ANDRIANTSOA (IGGLIA 3)
 
 ## Project setup
 ```
@@ -26,6 +26,3 @@ npm run build
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
