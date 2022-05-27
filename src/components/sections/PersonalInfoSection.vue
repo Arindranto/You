@@ -75,9 +75,6 @@
 	.vue-green {
 		color: var(--vue-green);
 	}
-	.content, .title {
-		text-shadow: 0 0 5px var(--vue-green);
-	}
 	.content {
 		/* Container */
 		position: absolute;
