@@ -54,11 +54,6 @@
 
 <style scoped>
 	@import '@/assets/style/style-data';
-
-	.info{
-		display: grid;
-		grid-template-columns: repeat(1, minmax(200px));
-	}
 	section {
 		position: relative;
 		font-family: var(--title-font);
