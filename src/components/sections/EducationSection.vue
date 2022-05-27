@@ -9,7 +9,7 @@
 			<ul v-if= "'university' in educationInfo">
 				<h3 class= "vue-green">Universit{{educationInfo.university.length == 1? "y": "ies"}}:</h3>
 				<li v-for= "(univ, i) in educationInfo.university" :key= "i">
-					<span class= "duration">{{univ.duration}}</span>
+					<h4 class= "duration">{{univ.duration}}</h4>
 					<h3>{{univ.school}}</h3>
 					<h5 v-if= "'grade' in univ">{{univ.grade}}</h5>
 				</li>
@@ -18,7 +18,7 @@
 			<ul v-if= "'highschool' in educationInfo">
 				<h3 class= "vue-green">High School{{educationInfo.highschool.length == 1? "": "s"}}:</h3>
 				<li v-for= "(hs, i) in educationInfo.highschool" :key= "i">
-					<span class= "duration">{{hs.duration}}</span>
+					<h4 class= "duration">{{hs.duration}}</h4>
 					<h3>{{hs.school}}</h3>
 					<h5 v-if= "'grade' in hs">{{hs.grade}}</h5>
 				</li>
@@ -27,7 +27,7 @@
 			<ul v-if= "'college' in educationInfo">
 				<h3 class= "vue-green">College{{educationInfo.college.length == 1? "": "s"}}:</h3>
 				<li v-for= "(cl, i) in educationInfo.college" :key= "i">
-					<span class= "duration">{{cl.duration}}</span>
+					<h4 class= "duration">{{cl.duration}}</h4>
 					<h3>{{cl.school}}</h3>
 					<h5 v-if= "'grade' in cl">{{cl.grade}}</h5>
 				</li>

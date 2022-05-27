@@ -97,6 +97,9 @@
 <style>
 	/* To be changed */
 	@import '@/assets/style/style-data';
+	* {
+		font-family: var(--title-font);
+	}
 
 	h2 {
 		/* All section titles */

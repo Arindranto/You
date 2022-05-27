@@ -90,9 +90,9 @@ let memberList= [
 		personalInfo: {
 			firstname: "Mendrika Henintsoa",
 			lastname: "Harimalala",
-			faculty: "IGGLIA3",
+			faculty: "Business Management, Software Engineering and Artificial Intelligence",
 			age: 20,
-			tel: "0342149563",
+			tel: "+261 34 21 495 63",
 			email: "harimalalamendrika@gmail.com"
 		},
 		educationInfo:{
@@ -105,45 +105,30 @@ let memberList= [
 			],
 			highschool: [
 				{
-					school: "Lycée Jules Ferry Faravohitra",
+					school: "Lycée Privée Catholique Notre Dame de Fatima",
 					grade: "D Baccalaureate",
-					duration: "2017 ~ 2019"
-				},
-				{
-					school: "International Light High School",
-					duration: "2016 ~ 2017"
+					duration: "2012 ~ 2019"
 				},
 			],
-			college: [
-				{
-					school: "International Light College",
-					grade: "",
-					duration: "2017 ~ 2019"
-				},
-				{
-					school: "Collège d'Enseignement Général",
-					duration: "2012"
-				},
-			]
 		},
 		skillsInfo:{
 			framework: ["Symfony","ANGULAR","BOOTSTRAP","Flutter"],
 			programmation: ["HTML","CSS","JavaScript","Java","C","PHP","Pascal"],
 			modelization: ["Merise"],
 			db: ["MySQL"],
-			officeAutomation: ["Word","PowerPoint","Excel"]
+			officeAutomation: ["Microsoft Word","Microsoft PowerPoint","Microsoft Excel"]
 		},
 		experienceInfo: {
 			'Book-y': {
-				description: 'A web application to manage library',
+				description: 'A web application to manage libraries.',
 				techs: ['Symfony 5', 'MySQL']
 			},
 			'Intermall': {
-				description: 'A mobile application for online saling',
+				description: 'A mobile application for online sales.',
 				techs: ['Flutter',]
 			},
 			'MadArt': {
-				description: 'A website that shows the beauty of Madagascar',
+				description: 'A website that shows the beauty of Madagascar.',
 				techs: ['HTML 5', 'CSS 3']
 			}
 		}
@@ -158,7 +143,7 @@ let memberList= [
 		personalInfo: {
 			firstname: "Aina Sariaka",
 			lastname: "Andriamanana",
-			faculty: "IGGLIA3",
+			faculty: "Business Management, Software Engineering and Artificial Intelligence",
 			age: 20,
 			tel: "0342149563",
 			email: "harimalalamendrika@gmail.com"
@@ -207,7 +192,7 @@ let memberList= [
 				techs: ['Symfony 5', 'MySQL']
 			},
 			'Intermall': {
-				description: 'A mobile application for online saling',
+				description: 'A mobile application for online sales',
 				techs: ['Flutter',]
 			},
 			'MadArt': {
@@ -226,7 +211,7 @@ let memberList= [
 		personalInfo: {
 			firstname: "Fanirintsoa Mathieu",
 			lastname: "Andrianandraina",
-			faculty: "ISAIA3",
+			faculty: "Computer Science, Applied Statistics and Artificial Intelligence",
 			age: 21,
 			tel: "0347236379",
 			email: "fanirintsoaandrianandraina@gmail.com"
@@ -275,7 +260,7 @@ let memberList= [
 				techs: ['Symfony 5', 'MySQL']
 			},
 			'Intermall': {
-				description: 'A mobile application for online saling',
+				description: 'A mobile application for online sales',
 				techs: ['Flutter',]
 			},
 			'MadArt': {
@@ -294,7 +279,7 @@ let memberList= [
 		personalInfo: {
 			firstname: "Tsiory Herinjato",
 			lastname: "Andriamahefa",
-			faculty: "ISAIA3",
+			faculty: "Computer Science, Applied Statistics and Artificial Intelligence",
 			age: 21,
 			tel: "0342149563",
 			email: "harimalalamendrika@gmail.com"
@@ -342,7 +327,7 @@ let memberList= [
 				techs: ['Symfony 5', 'MySQL']
 			},
 			'Intermall': {
-				description: 'A mobile application for online saling',
+				description: 'A mobile application for online sales',
 				techs: ['Flutter',]
 			},
 			'MadArt': {

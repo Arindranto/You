@@ -1,20 +1,21 @@
 <!-- A simple PersonalInfoSection test -->
 <template>
 	<section>
-		<div class="child">
+		<div class="img">
 			<img :src="img" alt="unfound" srcset="">
 		</div>
-		<div class="child">
-			<h1><span class= "vue-green">{{ personalInfo.firstname }}</span><br/>{{ personalInfo.lastname.toUpperCase() }}</h1>
-			
-			<!-- <div class= "content"> -->
-				" <span class= "vue-green">{{personalInfo.description}}</span> "
+		<div>
+			<div class= "title">
+				<h1><span class= "vue-green">{{ personalInfo.firstname }}</span><br/>{{ personalInfo.lastname.toUpperCase() }}</h1>
+				<h3>" <span class= "vue-green">{{personalInfo.description}}</span> "</h3>
+			</div>
+			<div class= "content">
 				<br><br>
-				<p>{{ personalInfo.age }} years old</p>
-				<p>{{personalInfo.faculty}}</p>
-				<p>{{personalInfo.email}}</p>
-				<p>{{personalInfo.tel}}</p>
-			<!-- </div> -->
+				<h3>{{ personalInfo.age }} years old</h3>
+				<h3>{{personalInfo.faculty}}</h3>
+				<h3>{{personalInfo.email}}</h3>
+				<h3>{{personalInfo.tel}}</h3>
+			</div>
 		</div>
 		
 	</section>
@@ -59,17 +60,8 @@
 		font-family: var(--title-font);
 		color: #ffffff;
 		display: grid;
-		justify-content: start;
 		grid-column-gap: 20px;
 		grid-template-columns: 1fr 3fr;
-	}	
-
-	.content {
-		/* Container */
-		position: absolute;
-		border: solid 2px #ffffff;
-		border-radius: 10px;
-		color: #ffffff;
 	}
 
 	img{
@@ -82,5 +74,17 @@
 	}
 	.vue-green {
 		color: var(--vue-green);
+	}
+	.content, .title {
+		text-shadow: 0 0 5px var(--vue-green);
+	}
+	.content {
+		/* Container */
+		position: absolute;
+		bottom: 40px;
+	}
+	.img {
+		display: grid;
+		place-items: center;
 	}
 </style>
