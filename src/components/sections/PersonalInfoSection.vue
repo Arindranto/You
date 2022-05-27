@@ -4,7 +4,7 @@
 		<div class="img">
 			<img :src="img" alt="unfound" srcset="">
 		</div>
-		<div>
+		<div class="info">
 			<div class= "title">
 				<h1><span class= "vue-green">{{ personalInfo.firstname }}</span><br/>{{ personalInfo.lastname.toUpperCase() }}</h1>
 				<h3>" <span class= "vue-green">{{personalInfo.description}}</span> "</h3>
@@ -55,10 +55,14 @@
 <style scoped>
 	@import '@/assets/style/style-data';
 
+	.info{
+		display: grid;
+		grid-template-columns: repeat(1, minmax(200px));
+	}
 	section {
 		position: relative;
 		font-family: var(--title-font);
-		color: #ffffff;
+		color: #ffffff; 
 		display: grid;
 		grid-column-gap: 20px;
 		grid-template-columns: 1fr 3fr;
