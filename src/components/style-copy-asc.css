@@ -1,0 +1,364 @@
+@import '@/assets/style/style-data';
+
+	* {
+		list-style: none;
+		color: #ffffff;
+	}
+
+	#container {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		padding-left: 110px;
+		padding-right: 110px;
+	}
+	#sidebar {
+		position: absolute;
+		text-align: center;
+		left: 0;
+		background: var(--vue-blue);
+		width: 70px;
+		height: 100%;
+		padding-top: 20px;
+		position: fixed;
+		z-index: 1000;
+	}
+	.back-btn {
+		position: absolute;
+		display: grid;
+		place-items: center;
+		bottom: 20px;
+		left: 10px;
+		height: 50px;
+		width: 50px;
+		border: solid 5px var(--vue-green);
+		border-radius: 50%;
+		cursor: pointer;
+		color: black;
+		font-weight: 900;
+		font-size: 20px;
+		background: rgba(0,0,0,0);
+	}
+	#back-arrow {
+		width: 25px;
+		height: 25px;
+		border-bottom: solid 7px var(--vue-green);
+		border-left: solid 7px var(--vue-green);
+		border-radius: 5px;
+		transform: translateX(3.5px) rotate(45deg);
+	}
+	.back-btn:hover {
+		border-color: var(--dark-blue);
+		transition: all .2s;
+		transition-timing-function: ease-in;
+	}
+	.back-btn:hover #back-arrow{
+		border-left-color: var(--dark-blue);
+		border-bottom-color:  var(--dark-blue);
+		transition: all .2s;
+		transition-timing-function: ease-in;
+	}
+	/*Grid positionning */
+	.grid {
+		display: grid;
+		grid-gap: 10px;
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.grid-child {
+		padding: 20px;
+		border-radius: 23px;
+		border: 2.5px solid var(--vue-green);
+		box-shadow: 0 0 5px var(--dark-green);
+	}
+	.grid-child:nth-child(1){
+		background-color: var(--vue-blue);
+		min-height: 280px;
+	}
+
+ }
+
+  @import '@/assets/style/style-data';
+  #list {
+    /*position: absolute;*/
+
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+  .list {
+	animation: andrana 1s;
+
+    }
+	@keyframes andrana{
+		0%{
+			transform:scale(0.95) ;
+			}
+		100%{
+			transform: scale(1);
+			}
+	}
+
+  @import '@/assets/style/style-data'; /* Importing the base colors */
+
+  .description, .name, img {
+    position: absolute;
+    margin: 5px 10px;
+  }
+  .container {
+    /* the mainn container */
+    position: relative;
+    height: 350px;
+    width: 220px;
+    margin: 10px;
+
+    font-weight: 100;
+    display: flex;
+    flex-direction: column;
+
+    /* justify-content: center; */
+    align-items: center;
+
+    text-align: center;
+    color: #ffffff;
+
+    background: var(--vue-blue);
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, .5);
+    border-radius: 20px;
+
+    cursor: pointer;
+    transition: all .3s;
+    transition-timing-function: ease-in;
+
+    font-family: var(--desc-font);
+  }
+  .container::before{
+    /* The green div on the MemberCard */
+    content:"";
+    border-radius: 20px 20px 0 0;
+    position: absolute;
+   
+    height: 30%;
+    width: 100%;
+    background: var(--vue-green);
+  }
+  img {
+    /* the image */
+    top: 3%;
+    height: 52%;
+    width: 80%;
+    object-fit: cover;
+    
+    border-radius: 50%;
+
+    /* padding: 15px;
+    margin: 15px; */
+
+    background: var(--dark-blue);
+  }
+  .name {
+    /* the fullname text */
+    top: 54%;
+    height: 75px;
+    margin: 15px;
+
+    display: grid;
+    place-items: center;
+    
+    letter-spacing: 1px;
+    line-height: 22px;
+    font-size: 17px;
+    font-weight: 900;
+    vertical-align: center;
+  }
+  .description {
+    /* the description text */
+    top: 83%;
+    font-weight: bold;
+  }
+  .hovered {
+    /* Configuration for the .hovered class mentionned above (on hover) */
+    /* .container:hover */
+    width: 224px;
+    height: 354px;
+    margin: 8px;
+
+    background:  var(--vue-green);
+    color: var(--dark-blue);
+    box-shadow: 0 10px 40px var(--dark-green);
+  }
+
+  @import '@/assets/style/style-data';
+	img {
+		width: 60px;
+		height: 60px;
+		margin: 5px 0;
+		background: var(--dark-blue);
+		border-radius: 50%;
+	}
+	.back {
+		display: grid;
+		place-items: center;
+		width: 100%;
+		cursor: pointer;
+	}
+
+	.back:hover img {
+		padding: 2px;
+		box-shadow: 0 0 10px var(--vue-green);
+		transition: all .3s;
+		transition-timing-function: ease-in;
+	}
+	/* The actually active component */
+	.active img {
+		padding: 0;
+		background: var(--vue-green);
+		box-shadow: 0 0 10px var(--dark-green);
+	}
+	.active:hover img{
+		box-shadow: 0 0 20px var(--dark-green);
+		transition: all .3s;
+		transition-timing-function: ease-in;
+	}
+
+	@import '@/assets/style/style-data';
+
+  /* To change */
+
+  @keyframes hideIt {
+    /* Animation (doesn't work yet) */
+    from {
+      width: 100%;
+      display: block;
+    }
+    to {
+      width: 100px;
+    }
+  }
+	h1 {
+    font-family: var(--title-font);
+    font-size: max(3vw, 25px);
+    letter-spacing: 2px;
+    text-align: center;
+
+    color: #ffffff;
+  }
+  .vue-green{
+    /* Special span in h1 */
+    color: var(--vue-green);
+  }
+  #main {
+    /* The container of the application */
+    position: absolute;
+
+    display: grid;
+    grid-template-rows: 100px auto;
+    place-items: center;
+
+    height: 100%;
+    width: 100%;
+  }
+  .hidden {
+    background: var(--vue-blue);
+    animation-name: hideIt;
+    animation-duration: .6s;
+    animation-fill-mode: forwards;
+		transition-timing-function: ease-in;
+  }
+
+  @import '@/assets/style/style-data';
+	h3 {
+		color: var(--vue-green)
+	}
+	section {
+		font-family: var(--title-font);
+		color: #ffffff;
+	}	
+	#content {
+		/* Container */
+		border: solid 2px #ffffff;
+		padding: 25px;
+		border-radius: 10px;
+		color: #ffffff;
+	}
+	.vue-green {
+		color: var(--vue-green);
+	}
+	ul {
+		padding-left: 15px;
+		list-style: none;
+	}
+	ul li{
+		padding-left: 15px;
+	}
+
+	@import '@/assets/style/style-data';
+
+	section {
+		font-family: var(--title-font);
+		color: #ffffff;
+		display: grid;
+		grid-gap: 20px;
+		grid-template-columns: repeat(auto-fill, 250px);
+		
+	}	
+
+	#content {
+		/* Container */
+		border: solid 2px #ffffff;
+		padding: 25px;
+		border-radius: 10px;
+		color: #ffffff;
+	}
+
+	img{
+		width: 200px;
+		padding: 0;
+		background-color: var(--dark-blue);
+		border-radius: 30px;
+		box-shadow: 0 0 10px rgb(20, 38, 39);
+	}
+	.vue-green {
+		color: var(--vue-green);
+	}
+
+		@import '@/assets/style/style-data';
+	h3 {
+		color: var(--vue-green)
+	}
+	section {
+		font-family: var(--title-font);
+		color: #ffffff;
+	}	
+	#content {
+		/* Container */
+		border: solid 2px #ffffff;
+		padding: 25px;
+		border-radius: 10px;
+		color: #ffffff;
+	}
+	.vue-green {
+		color: var(--vue-green);
+	}
+
+	@import '@/assets/style/style-data';
+	
+	h3 {
+		color: var(--vue-green)
+	}
+	section {
+		font-family: var(--title-font);
+		color: #ffffff;
+	}	
+	#content {
+		/* Container */
+		border: solid 2px #ffffff;
+		padding: 25px;
+		border-radius: 10px;
+		color: #ffffff;
+	}
+	.vue-green {
+		color: var(--vue-green);
+	}

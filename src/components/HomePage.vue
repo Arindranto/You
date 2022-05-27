@@ -53,7 +53,7 @@
       display: block;
     }
     to {
-      width: 100px;
+      width: 70px;
     }
   }
 	h1 {
@@ -82,7 +82,7 @@
   .hidden {
     background: var(--vue-blue);
     animation-name: hideIt;
-    animation-duration: .6s;
+    animation-duration: .4s;
     animation-fill-mode: forwards;
 		transition-timing-function: ease-in;
   }

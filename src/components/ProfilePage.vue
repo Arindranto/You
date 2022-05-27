@@ -103,11 +103,6 @@
 		text-align: center;
 		text-shadow: 0 0 50px var(--vue-green);
 	}
-	* {
-		list-style: none;
-		color: #ffffff;
-	}
-
 	#container {
 		position: absolute;
 		display: flex;
@@ -115,7 +110,7 @@
 		height: auto;
 		width: 100%;
 		/* To set an auto overflow */
-		min-width: 720px;
+		min-width: 800px;
 		padding-left: 70px;	/* for the side bar */
 		/*padding-right: 110px;*/
 	}

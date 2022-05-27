@@ -48,6 +48,7 @@
 	}
 	.key {
 		margin-top: 15px;
-		border-bottom: solid 3px #ffffff ;
+		color: var(--vue-green);
+		border-bottom: solid 3px var(--vue-green) ;
 	}
 </style>

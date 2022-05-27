@@ -24,9 +24,9 @@
 <style scoped>
 	@import '@/assets/style/style-data';
 	img {
-		width: 60px;
-		height: 60px;
-		margin: 5px 0;
+		width: 55px;
+		height: 55px;
+		margin: 7.5px 0;
 		background: var(--dark-blue);
 		border-radius: 50%;
 	}

@@ -7,7 +7,7 @@
 			<li>2019 : {{educationInfo.collegeDiploma}}<br>{{educationInfo.collegeSchool}}</li> -->
 			<!-- UNIVERSITIES -->
 			<ul v-if= "'university' in educationInfo">
-				<h4>Universit{{educationInfo.university.length == 1? "y": "ies"}}:</h4>
+				<h3 class= "vue-green">Universit{{educationInfo.university.length == 1? "y": "ies"}}:</h3>
 				<li v-for= "(univ, i) in educationInfo.university" :key= "i">
 					<span class= "duration">{{univ.duration}}</span>
 					<h3>{{univ.school}}</h3>
@@ -16,7 +16,7 @@
 			</ul>
 			<!-- HIGH SCHOOL -->
 			<ul v-if= "'highschool' in educationInfo">
-				<h4>High School{{educationInfo.highschool.length == 1? "": "s"}}:</h4>
+				<h3 class= "vue-green">High School{{educationInfo.highschool.length == 1? "": "s"}}:</h3>
 				<li v-for= "(hs, i) in educationInfo.highschool" :key= "i">
 					<span class= "duration">{{hs.duration}}</span>
 					<h3>{{hs.school}}</h3>
@@ -25,7 +25,7 @@
 			</ul>
 			<!-- COLLEGE -->
 			<ul v-if= "'college' in educationInfo">
-				<h4>College{{educationInfo.college.length == 1? "": "s"}}:</h4>
+				<h3 class= "vue-green">College{{educationInfo.college.length == 1? "": "s"}}:</h3>
 				<li v-for= "(cl, i) in educationInfo.college" :key= "i">
 					<span class= "duration">{{cl.duration}}</span>
 					<h3>{{cl.school}}</h3>
@@ -60,12 +60,13 @@
 	
 	h3 {
 		/* Education title */
-		color: var(--vue-green)
+		text-shadow: 0 0 10px var(--vue-green);
 	}
-	h4 {
+	h3.vue-green {
 		/* Section title: University, etc */
 		margin-top: 15px;
-		border-bottom: solid 3px #ffffff ;
+		text-shadow: 0 0 0;
+		border-bottom: solid 3px var(--vue-green) ;
 	}
 	h2 {
 		/* School names */

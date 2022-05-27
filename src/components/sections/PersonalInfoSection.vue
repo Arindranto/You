@@ -8,7 +8,7 @@
 			<h1><span class= "vue-green">{{ personalInfo.firstname }}</span><br/>{{ personalInfo.lastname.toUpperCase() }}</h1>
 			
 			<!-- <div class= "content"> -->
-				<span class= "vue-green">{{personalInfo.description}}</span>
+				" <span class= "vue-green">{{personalInfo.description}}</span> "
 				<br><br>
 				<p>{{ personalInfo.age }} years old</p>
 				<p>{{personalInfo.faculty}}</p>
@@ -59,9 +59,9 @@
 		font-family: var(--title-font);
 		color: #ffffff;
 		display: grid;
-		align-items: center;
+		justify-content: start;
 		grid-column-gap: 20px;
-		grid-template-columns: 200px 100%;
+		grid-template-columns: 1fr 3fr;
 	}	
 
 	.content {
