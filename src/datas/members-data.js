@@ -314,23 +314,23 @@ let memberList= [
 		// ],
 		skillsInfo:{
 			framework: ["VueJS 3","BOOTSTRAP","Flutter"],
-			programmation: ["HTML 5","CSS 3","JavaScript","Java","C","PHP","Pascal"],
+			programmation: ["HTML 5","CSS 3","JavaScript","Java","C","PHP","Pascal", "Python"],
 			modelization: ["Merise"],
 			db: ["MySQL"],
 			officeAutomation: ["Word","PowerPoint","Excel"]
 		},
 		experienceInfo: {
-			'Book-y': {
-				description: 'A web application to manage library',
-				techs: ['Symfony 5', 'MySQL']
+			'Online Diplome': {
+				description: 'Web application that digitalize the obtain of baccalaureate certificates',
+				techs: ['NodeJs', 'VueJs']
 			},
-			'Intermall': {
-				description: 'A mobile application for online sales',
-				techs: ['Flutter',]
+			'Point-Walk': {
+				description: 'Staff attendance sotfware',
+				techs: ['Python']
 			},
-			'MadArt': {
-				description: 'A website that shows the beauty of Madagascar',
-				techs: ['HTML 5', 'CSS 3']
+			'Flash Delivery': {
+				description: 'Mobile Application that manage service delivery',
+				techs: ['Flutter']
 			}
 		}
 	}
