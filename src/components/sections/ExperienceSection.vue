@@ -8,7 +8,7 @@
 		<ul>
 			<li v-for= "(value, key) in experienceInfo" :key= "key">
 				<h3 class= 'key'>{{key}}</h3>
-				<h4>{{experienceInfo[key].description}}</h4>
+				<h3 class= 'desc'>{{experienceInfo[key].description}}</h3>
 				<h5 v-for= "(tech, i) in experienceInfo[key].techs" :key= "i" >
 					{{tech + (i === experienceInfo[key].techs.length - 1? "": " | ")}}
 				</h5>
@@ -30,7 +30,7 @@
 
 <style scoped>
 	@import '@/assets/style/style-data';
-	h4, h5:nth-of-type(1) {
+	.desc, h5:nth-of-type(1) {
 		margin-left: 20px;
 	}
 	h5 {
