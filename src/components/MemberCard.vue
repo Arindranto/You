@@ -106,10 +106,10 @@
   .container::before{
     /* The green div on the MemberCard */
     content:"";
-    border-radius: 20px 20px 0 0;
+    border-radius: 20px 20px 50% 50%;
     position: absolute;
    
-    height: 30%;
+    height: 58%;
     width: 100%;
     background: var(--vue-green);
   }
